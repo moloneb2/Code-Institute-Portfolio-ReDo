@@ -29,7 +29,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    height: 14vw;
+    height: 12vw;
 }
 
 header a {
@@ -40,19 +40,19 @@ header a {
 header h1 {
     font-family: 'Sniglet', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     -webkit-text-stroke-width: 0.15vw;
     -webkit-text-stroke-color: black;
     color: orange;
-    margin-top: 2vw;
-    width: 80vw;
+    margin-top: 3.1vw;
+    width: 85vw;
 }
 /*hamburger menu from font awesome */
 #hamburger-menu{
     font-size: 4vw;
-    margin-top: 3.1vw;
-    margin-right: 5vw;
-    margin-left: 2vw;
+    margin-top: 4vw;
+    margin-right: 2vw;
+    margin-left: -2vw;
 }
 #hamburger-menu:hover{
     color: rgba(114, 112, 112, 0.6);
@@ -93,7 +93,7 @@ main {
     font-size: 110%;
     letter-spacing: 1px;
     list-style-type: none;
-    width: 95vw;
+    width: 85vw;
     border-radius: 1vw;
     
 }
@@ -109,9 +109,10 @@ main {
 /*Nav bar styles with dropdown toggle*/
 nav{
     position: absolute;
-    top: 14.5vw;
+    top: 13.5vw;
+    left: 5vw;
     display: none;
-    
+     
      
 }
 #nav-toggle{
@@ -131,16 +132,12 @@ nav li a{
 footer {
     background-color: orange;
 }
-/*Media Query: tablets and larger (760px and up)*/
-@media screen and (min-width: 760px) {
-    /*Header*/
-nav{
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: irem;
+/*Media Query; tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+    #hamburger-menu{
+        font-size: 4vw;
+        margin-top: 4vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    } 
 }
-
-}
-
