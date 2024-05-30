@@ -45,7 +45,7 @@ header h1 {
     -webkit-text-stroke-color: black;
     color: orange;
     margin-top: 2vw;
-    ;
+    width: 80vw;
 }
 /*hamburger menu from font awesome */
 #hamburger-menu{
@@ -79,7 +79,8 @@ main {
 }
 /*styling of main background picture*/
 #main-pic-bg{
-    background: url("../Images/Pic-Main-Section-5.jpg")no-repeat center center/cover;
+    background: url("../Images/Pic-Main-Section-5.jpg")50% 50% no-repeat;
+    background-size: cover;
 }
 
 /*styling of the nav bar. default setting is to display: 'none'*/
@@ -129,5 +130,17 @@ nav li a{
  /* Footer */
 footer {
     background-color: orange;
+}
+/*Media Query: tablets and larger (760px and up)*/
+@media screen and (min-width: 760px) {
+    /*Header*/
+nav{
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: irem;
+}
+
 }
 
