@@ -1,4 +1,9 @@
-/* Asterisk Css selector to override default styles added by the browser. Default styles include padding, margin and box sizing */
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Sniglet:wght@400;800&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
@@ -11,19 +16,63 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: rgb(58, 58, 58);
+    color: #3a3a3a;
+    font-family: 'Sniglet', sans-serif;
 }
-
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Sniglet', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+#logo{
+    text-align: center;
+    font-size: 6vw;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16vw;
+    font-size: 110%;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    font-size: 4vw;
+}
+nav li{
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* Main content */
 main {
-    background-color: lightblue;
-    /* Use of flex in <main> to push footer down */
+    
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
 
