@@ -12,7 +12,7 @@
 
 /* General styles */
 body {
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
@@ -23,14 +23,12 @@ body {
 /* Header */
 header {
     display: flex;
-    
-    background-color: #ffffff;
+    box-shadow: 0 2px 2px #3a3a3a;   
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    height: 10vw;
+    height: 14vw;
 }
 
 header a {
@@ -51,23 +49,34 @@ header h1 {
 #hamburger-menu{
     font-size: 4vw;
     margin-top: 2.5vw;
-    margin-right: 5vw;
+    margin-right: 10vw;
 }
+#hamburger-menu:hover{
+    color: rgba(114, 112, 112, 0.6);
+    transition: 0.5s;
+}
+    
+/*Header background picture of the sky*/
 #header-sky-bg{
     background: url("../Images/header-pic-sky.jpg")no-repeat center center/cover;
 }
-#logo{
+/*Bee Keepers logo inside header element*/
+#Bee-Keepers-logo{
     text-align: center;
     font-size: 5vw;
 }
 
 #menu {
+    background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;
     display: flex;
-    justify-content: space-between;
-    margin-top: 12vw;
+    justify-content: space-around;
+    margin-top: 15vw;
+    margin-left: 3vw;
     font-size: 110%;
     letter-spacing: 1px;
     list-style-type: none;
+    width: 95%;
+    border-radius: 2vw;
 }
 
 #menu > li {
@@ -75,11 +84,13 @@ header h1 {
     margin-right: 0.9em;
     font-size: 2.5vw;
     
+
 }
 
 nav li a{
     font-family: 'Sniglet', sans-serif;
     text-decoration: none; 
+    color: white;
 }
  
 
@@ -93,8 +104,13 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
+/*styling of main background picture*/
+#main-pic-bg{
+    background: url("../Images/pic-main-section.jpg")no-repeat center center/cover;
+}
 
 /* Footer */
 footer {
     background-color: orange;
 }
+
