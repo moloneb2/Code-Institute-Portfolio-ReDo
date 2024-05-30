@@ -12,7 +12,7 @@
 
 /* General styles */
 body {
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
@@ -23,6 +23,7 @@ body {
 /* Header */
 header {
     display: flex;
+    
     box-shadow: 0 2px 2px #3a3a3a;   
     padding: 0 1rem;
     position: fixed;
@@ -44,12 +45,14 @@ header h1 {
     -webkit-text-stroke-color: black;
     color: orange;
     margin-top: 2vw;
+    ;
 }
 /*hamburger menu from font awesome */
 #hamburger-menu{
     font-size: 4vw;
-    margin-top: 2.5vw;
-    margin-right: 10vw;
+    margin-top: 3.1vw;
+    margin-right: 5vw;
+    margin-left: 2vw;
 }
 #hamburger-menu:hover{
     color: rgba(114, 112, 112, 0.6);
@@ -66,37 +69,7 @@ header h1 {
     font-size: 5vw;
 }
 
-#menu {
-    background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15vw;
-    margin-left: 3vw;
-    font-size: 110%;
-    letter-spacing: 1px;
-    list-style-type: none;
-    width: 95%;
-    border-radius: 2vw;
-}
 
-#menu > li {
-    margin-left: 0.9em;
-    margin-right: 0.9em;
-    font-size: 2.5vw;
-    
-
-}
-
-nav li a{
-    font-family: 'Sniglet', sans-serif;
-    text-decoration: none; 
-    color: white;
-}
- 
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
 
 /* Main content */
 main {
@@ -106,10 +79,54 @@ main {
 }
 /*styling of main background picture*/
 #main-pic-bg{
-    background: url("../Images/pic-main-section.jpg")no-repeat center center/cover;
+    background: url("../Images/Pic-Main-Section-5.jpg")no-repeat center center/cover;
 }
 
-/* Footer */
+/*styling of the nav bar. default setting is to display: 'none'*/
+#menu {
+    background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;     
+    display: flex;
+    justify-content: space-around;
+    
+    margin-left: 0.5vw;
+    font-size: 110%;
+    letter-spacing: 1px;
+    list-style-type: none;
+    width: 95vw;
+    border-radius: 1vw;
+    
+}
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#menu > li {
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    font-size: 2.5vw;
+}
+/*Nav bar styles with dropdown toggle*/
+nav{
+    position: absolute;
+    top: 14.5vw;
+    display: none;
+    
+     
+}
+#nav-toggle{
+    display: none;
+}
+/*Nav toggle*/
+#nav-toggle:checked~nav{
+     display: block;
+}
+
+nav li a{
+    font-family: 'Sniglet', sans-serif;
+    text-decoration: none; 
+    color: white;
+}
+ /* Footer */
 footer {
     background-color: orange;
 }
