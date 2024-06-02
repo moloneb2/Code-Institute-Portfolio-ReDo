@@ -23,8 +23,8 @@ body {
 /* Header */
 header {
     display: flex;
-    
-    box-shadow: 0 2px 2px #3a3a3a;   
+
+    box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -47,24 +47,27 @@ header h1 {
     margin-top: 3.1vw;
     width: 85vw;
 }
+
 /*hamburger menu from font awesome */
-#hamburger-menu{
+#hamburger-menu {
     font-size: 4vw;
     margin-top: 4vw;
     margin-right: 2vw;
     margin-left: -2vw;
 }
-#hamburger-menu:hover{
+
+#hamburger-menu:hover {
     color: rgba(114, 112, 112, 0.6);
     transition: 0.5s;
 }
-    
+
 /*Header background picture of the sky*/
-#header-sky-bg{
+#header-sky-bg {
     background: url("../Images/header-pic-sky.jpg")no-repeat center center/cover;
 }
+
 /*Bee Keepers logo inside header element*/
-#Bee-Keepers-logo{
+#Bee-Keepers-logo {
     text-align: center;
     font-size: 5vw;
 }
@@ -73,111 +76,120 @@ header h1 {
 
 /* Main content */
 main {
-    
+
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
+
 /*styling of main background picture*/
-#main-pic-bg{
+#main-pic-bg {
     background: url("../Images/Pic-Main-Section-5.jpg")50% 50% no-repeat;
     background-size: cover;
 }
 
 /*styling of the nav bar. default setting is to display: 'none'*/
 #menu {
-    background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;     
+    background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;
     display: flex;
     justify-content: space-around;
-    
+
     margin-left: 0.5vw;
     font-size: 110%;
     letter-spacing: 1px;
     list-style-type: none;
     width: 85vw;
     border-radius: 1vw;
-    
+
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
 
-#menu > li {
+#menu>li {
     margin-left: 0.9em;
     margin-right: 0.9em;
     font-size: 2.5vw;
 }
+
 /*Nav bar styles with dropdown toggle*/
-nav{
+nav {
     position: absolute;
     top: 13.5vw;
     left: 5vw;
     display: none;
-     
-     
-}
-#nav-toggle{
-    display: none;
-}
-/*Nav toggle*/
-#nav-toggle:checked~nav{
-     display: block;
+
+
 }
 
-nav li a{
-    font-family: 'Sniglet', sans-serif;
-    text-decoration: none; 
-    color: white;
+#nav-toggle {
+    display: none;
 }
- /* Footer */
-footer{
-    
+
+/*Nav toggle*/
+#nav-toggle:checked~nav {
     display: block;
 }
+
+nav li a {
+    font-family: 'Sniglet', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+
+    display: block;
+}
+
 /*styling of social media icons*/
-#social-networks{
+#social-networks {
     display: flex;
-    
+
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    
+
     list-style-type: none;
     background-color: orange;
     border-top: 1px solid #3a3a3a;
-    
+
 }
+
 /*styling of divs situated inside the footer*/
-ul div{
+ul div {
     display: flex;
     justify-content: center;
     border: 1px solid inherit;
     width: 100%;
     padding: 1vw 0;
 }
-li i{
+
+li i {
     color: black;
     font-size: 3vw;
     margin-left: 5vw;
     margin-right: 5vw;
 }
+
 /*styling of 'Follow Us!' text*/
-div h8{
+div h8 {
     margin-right: 10vw;
 }
+
 /*Media Query; tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
-    #hamburger-menu{
+    #hamburger-menu {
         font-size: 4vw;
         margin-top: 4vw;
         margin-right: 2vw;
         margin-left: 2vw;
-    } 
+    }
 }
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
+@media only screen and (min-width: 1200px) {}
