@@ -129,8 +129,20 @@ nav li a{
     color: white;
 }
  /* Footer */
-footer {
-    background-color:inherit;
+
+/*styling of social media icons*/
+#social-networks{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1vw 0;
+    list-style-type: none;
+    background-color: orange;
+    border-top: 1px solid #3a3a3a;; 
+}
+li i{
+    color: black;
+    font-size: 3vw;
 }
 /*Media Query; tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
