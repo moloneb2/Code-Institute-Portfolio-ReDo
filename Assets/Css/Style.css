@@ -129,20 +129,40 @@ nav li a{
     color: white;
 }
  /* Footer */
-
+footer{
+    
+    display: block;
+}
 /*styling of social media icons*/
 #social-networks{
     display: flex;
+    
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    padding: 1vw 0;
+    
     list-style-type: none;
     background-color: orange;
-    border-top: 1px solid #3a3a3a;; 
+    border-top: 1px solid #3a3a3a;
+    
+}
+/*styling of divs situated inside the footer*/
+ul div{
+    display: flex;
+    justify-content: center;
+    border: 1px solid inherit;
+    width: 100%;
+    padding: 1vw 0;
 }
 li i{
     color: black;
     font-size: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+/*styling of 'Follow Us!' text*/
+div h8{
+    margin-right: 10vw;
 }
 /*Media Query; tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
