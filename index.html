@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="Assets/Css/Style.css">
 </head>
 <!--Body Element-->
-    
+
 <body>
     <!-- Header -->
     <header id="header-sky-bg">
@@ -48,12 +48,18 @@
 
     <!-- Footer -->
     <footer>
-
-        <ul id="social-networks">
+        <!--Social Media buttons-->
+        <section id="social-networks">
             <div>
-                <h8>Follow Us!</h8>
+                <h8>Follow Us</h8>
             </div>
-            <div>
+            <div style="display: flex;">
+                <li>
+                    <a href="https://www.Twitter.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page(opens in a new tab)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
                 <li>
                     <a href="https://www.Facebook.com/" target="_blank" rel="noopener"
                         aria-label="Visit our Facebook Page(opens in a new tab)">
@@ -62,12 +68,6 @@
                 </li>
                 <li>
                     <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page(opens in a new tab)">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener"
                         aria-label="Visit our Youtube page(opens in a new tab)">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
@@ -78,9 +78,24 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
-
             </div>
-        </ul>
+        </section>
+        <!--Contact Information. Phone nnumber and Email address-->
+        <section id="contact-us">
+            <div><h8>Contact Info</h8>
+            </div>
+            <div style="display: flex;border: 1px solid green;display: flex;">
+                <div id="phone-number">
+                    <i class="fa-solid fa-phone" id="phone-icon"></i>
+                    <p id="phone-number">01-8564785</p>
+                </div>
+                <div id="email-address">
+                    <i class="fa-solid fa-envelope" id="email-icon"></i>
+                    <p>dublinbeekeepers@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        
     </footer>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/60adf61263.js" crossorigin="anonymous"></script>

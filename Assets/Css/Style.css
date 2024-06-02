@@ -140,42 +140,71 @@ nav li a {
 /* Footer */
 footer {
 
-    display: block;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+    border-top: 1px solid #3a3a3a;
 }
 
 /*styling of social media icons*/
 #social-networks {
-    display: flex;
-
+    border: 1px solid blue;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-
     list-style-type: none;
-    background-color: orange;
-    border-top: 1px solid #3a3a3a;
-
+    width: 50%;
 }
 
-/*styling of divs situated inside the footer*/
-ul div {
-    display: flex;
-    justify-content: center;
-    border: 1px solid inherit;
-    width: 100%;
-    padding: 1vw 0;
+#contact-us {
+    border: 1px solid rgb(16, 185, 197);
+    width: 50%;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
 }
 
 li i {
     color: black;
-    font-size: 3vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 /*styling of 'Follow Us!' text*/
 div h8 {
-    margin-right: 10vw;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    width: 5vw;
+}
+
+/*styling of div containing phone information*/
+#phone-number {
+    display: flex;
+    align-items: baseline;
+    /*border: 1px solid rgb(197, 125, 16);*/
+    width: 50%;
+}
+
+/*Addition of margin between phone icon and phone number*/
+#phone-icon {
+    margin-left: 8.5vw;
+    margin-right: 1vw;
+}
+
+/*styling of email address div*/
+#email-address {
+    align-items: baseline;
+    display: flex;
+    border: 1px solid rgb(155, 16, 197);
+    width: 50%;
+}
+
+/*addition if margin between email icon and email address*/
+#email-icon {
+    margin-left: 4.5vw;
+    margin-right: 1.5vw;
 }
 
 /*Media Query; tablets and larger (768px and up)*/
