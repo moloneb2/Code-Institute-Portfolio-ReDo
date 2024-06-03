@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -86,51 +87,95 @@ main {
     background: url("../Images/Pic-Main-Section-5.jpg")50% 50% no-repeat;
     background-size: cover;
 }
-/*styling of the different sections inside the main element of the body*/
-#main-container{
+
+/*styling of main container of the body*/
+#main-container {
     display: flex;
     flex-direction: column;
 }
-#inspirational-quote{
+
+/*styling of the inspirational div*/
+#inspirational-quote-div {
+    background-color: rgba(252, 246, 239, 0.5);
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid rgb(15, 15, 15);*/
+    width: 80%;
+    border-radius: 0.5vw;
+    margin-top: 20vw;
+    margin-left: 9vw;
+    height: 16vw;
+}
+
+/*styling of the inspirational title quote div*/
+#inspirational-quote {
+
+    /*border: 1px solid rgb(224, 9, 9);*/
+    margin-top: 1vw;
+    width: 99%;
+    height: 10vw;
+}
+
+/*styling of the inspirational title div*/
+#inspirational-quote-title {
+    /*border: 1px solid rgb(224, 9, 9);*/
+    
+    width: 99%;
+    height: 5vw;
+}
+
+/*styling of the inspirational quote text*/
+#inspirational-quote-text {
+    font-family: 'oswald', sans-serif;
+    font-style: italic;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*styling of inspirational author*/
+#inspirational-quote-author {
+    text-align: center;
+}
+
+#about-us {
     border: 1px solid rgb(15, 15, 15);
     width: 80%;
-    margin-top: 20vw;
+    margin-top: 10vw;
     margin-left: 9vw;
     height: 20vw;
 }
-#about-us{
+
+#junior-beekeepers {
     border: 1px solid rgb(15, 15, 15);
     width: 80%;
     margin-top: 10vw;
     margin-left: 9vw;
-    height: 20vw; 
+    height: 20vw;
 }
-#junior-beekeepers{
+
+#meeting-times {
     border: 1px solid rgb(15, 15, 15);
     width: 80%;
     margin-top: 10vw;
     margin-left: 9vw;
-    height: 20vw;  
+    height: 20vw;
 }
-#meeting-times{
-    border: 1px solid rgb(15, 15, 15);
-    width: 80%;
-    margin-top: 10vw;
-    margin-left: 9vw;
-    height: 20vw;  
-}
-#our-location{
+
+#our-location {
     border: 1px solid rgb(15, 15, 15);
     width: 80%;
     margin-top: 10vw;
     margin-left: 9vw;
     margin-bottom: 10vw;
-    height: 20vw;  
+    height: 20vw;
 }
 
 /*styling of the nav bar. default setting is to display: 'none'*/
 #menu {
     background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;
+
     display: flex;
     justify-content: space-around;
 
@@ -180,7 +225,7 @@ nav li a {
 
 /* Footer */
 footer {
-    height: 15vw;                                                                                 
+    height: 15vw;
     display: flex;
     flex-direction: row;
     background-color: orange;
@@ -190,14 +235,15 @@ footer {
 /*styling of container holding 'Follow Us' and 'Contact Us' info*/
 #container {
     display: flex;
-    
+
     border: 1px solid inherit;
     width: 95%;
     height: 80%;
     margin: auto;
 }
+
 /*styling of container parent divs*/
-#container-parent{
+#container-parent {
     display: flex;
     flex-direction: column;
     border-right: 1px solid black;
@@ -206,45 +252,47 @@ footer {
 }
 
 /*styling of children divs - containing 'contact us' and 'follow us' */
-#child-div{
-     
-     display: flex;
+#child-div {
+
+    display: flex;
     border: 1px inherit;
-    height: 100%; 
-    
+    height: 100%;
+
 }
+
 /*extra margin-top in child-div containing social media icons*/
-#child-div-A{
+#child-div-A {
     margin-bottom: 4.5vw;
 }
+
 /*styling of social media icons*/
 li {
-    
+
     display: inline-block;
-   list-style-type: none; 
+    list-style-type: none;
 }
-    
-#social-media-icon{
-margin-top: 0.1vw;      
- }
- 
-#child-div h8{
+
+#social-media-icon {
+    margin-top: 0.1vw;
+}
+
+#child-div h8 {
     width: 100%;
     margin-left: 1vw;
     font-size: 2vw;
     position: absolute;
     height: auto;
 }
- 
+
 li i {
     color: rgb(5, 5, 5);
     font-size: 2vw;
     margin-left: 1vw;
     margin-right: 2vw;
     margin-top: 5vw;
-    
+
 }
- 
+
 
 /*styling of 'Follow Us!' text*/
 div h8 {
@@ -273,17 +321,19 @@ div h8 {
 
 /*styling of email address div*/
 #email-address {
-     margin-top: 1vw;
+    margin-top: 1vw;
     /*border: 1px solid rgb(155, 16, 197);*/
     width: 50%;
-    
+
 }
-div p{
+
+div p {
     font-size: 2vw;
 }
+
 /*addition if margin between email icon and email address*/
 #email-icon {
-     margin-top: 1vw;
+    margin-top: 1vw;
     font-size: 2vw;
     margin-left: 1.1vw;
     margin-right: 1.5vw;
