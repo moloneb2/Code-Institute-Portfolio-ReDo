@@ -139,40 +139,60 @@ nav li a {
 
 /* Footer */
 footer {
-    padding-top: 2vw;
-                                                                                                                                                                                                                                                                                                                                                                 ;
-    height: 15vw;
+    height: 15vw;                                                                                 
     display: flex;
     flex-direction: row;
     background-color: orange;
     border-top: 1px solid #3a3a3a;
 }
 
-/*styling of social media icons*/
-#social-networks {
-    /*border: 1px solid rgb(217, 255, 0);*/
+/*styling of container holding 'Follow Us' and 'Contact Us' info*/
+#container {
+    display: flex;
+    
+    border: 1px solid rgb(12, 12, 12);
+    width: 95%;
+    height: 80%;
+    margin: auto;
+}
+/*styling of container parent divs*/
+#container-parent{
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
-    list-style-type: none;
-    width: 50%;
-    height: 50%;
-     
+    border: 1px solid rgb(12, 12, 12);
+    width: 100%;
 }
-div h8{
+
+/*styling of children divs*/
+#child-div{
      
-    padding-left: 2vw;
-     margin-top: 3vw;
-    font-size: 2vw;
+     display: flex;
+    border: 1px solid rgb(12, 12, 12);
+    height: 100%; 
+    
 }
-#contact-us {
-    /*border: 1px solid rgb(16, 185, 197);*/
-    width: 50%;
-    justify-content: space-evenly;
-    text-align: left;
+/*styling of social media icons*/
+li {
+     display: inline-block;
     list-style-type: none;
     
 }
+#social-media-icon{
+margin-top: 0.1vw;      
+ 
+}
+    
+
+    
+/*styling of 'Follow Us' text*/
+#child-div h8{
+    width: 100%;
+    margin-left: 1vw;
+    font-size: 2vw;
+    position: absolute;
+    height: auto;
+}
+
 
 li i {
     color: rgb(5, 5, 5);
@@ -185,8 +205,10 @@ li i {
 
 /*styling of 'Follow Us!' text*/
 div h8 {
-    font-family: Verdana, sans-serif;
-    font-weight: bold;
+    letter-spacing: 0.1vw;
+    font-family: Impact, sans-serif;
+    
+    
     width: 5vw;
     
 }
@@ -198,15 +220,15 @@ div h8 {
     align-items: baseline;
     /*border: 1px solid rgb(197, 125, 16);*/
     width: 40%;
-    margin-top: 1vw;
+    
 }
 
 /*Addition of margin between phone icon and phone number*/
 #phone-icon {
     font-size: 2vw;
-    margin-left: 0;
-    margin-right: 1vw;
-    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    
 }
 
 /*styling of email address div*/
