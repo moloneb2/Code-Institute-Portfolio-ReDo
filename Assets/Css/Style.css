@@ -86,6 +86,47 @@ main {
     background: url("../Images/Pic-Main-Section-5.jpg")50% 50% no-repeat;
     background-size: cover;
 }
+/*styling of the different sections inside the main element of the body*/
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+#inspirational-quote{
+    border: 1px solid rgb(15, 15, 15);
+    width: 80%;
+    margin-top: 20vw;
+    margin-left: 9vw;
+    height: 20vw;
+}
+#about-us{
+    border: 1px solid rgb(15, 15, 15);
+    width: 80%;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    height: 20vw; 
+}
+#junior-beekeepers{
+    border: 1px solid rgb(15, 15, 15);
+    width: 80%;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    height: 20vw;  
+}
+#meeting-times{
+    border: 1px solid rgb(15, 15, 15);
+    width: 80%;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    height: 20vw;  
+}
+#our-location{
+    border: 1px solid rgb(15, 15, 15);
+    width: 80%;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    margin-bottom: 10vw;
+    height: 20vw;  
+}
 
 /*styling of the nav bar. default setting is to display: 'none'*/
 #menu {
