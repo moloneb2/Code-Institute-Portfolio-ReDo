@@ -150,7 +150,7 @@ footer {
 #container {
     display: flex;
     
-    border: 1px solid rgb(12, 12, 12);
+    border: 1px solid inherit;
     width: 95%;
     height: 80%;
     margin: auto;
@@ -159,32 +159,34 @@ footer {
 #container-parent{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(12, 12, 12);
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     width: 100%;
 }
 
-/*styling of children divs*/
+/*styling of children divs - containing 'contact us' and 'follow us' */
 #child-div{
      
      display: flex;
-    border: 1px solid rgb(12, 12, 12);
+    border: 1px inherit;
     height: 100%; 
     
 }
+/*extra margin-top in child-div containing social media icons*/
+#child-div-A{
+    margin-bottom: 4.5vw;
+}
 /*styling of social media icons*/
 li {
-     display: inline-block;
-    list-style-type: none;
     
+    display: inline-block;
+   list-style-type: none; 
 }
+    
 #social-media-icon{
 margin-top: 0.1vw;      
+ }
  
-}
-    
-
-    
-/*styling of 'Follow Us' text*/
 #child-div h8{
     width: 100%;
     margin-left: 1vw;
@@ -192,14 +194,14 @@ margin-top: 0.1vw;
     position: absolute;
     height: auto;
 }
-
-
+ 
 li i {
     color: rgb(5, 5, 5);
     font-size: 2vw;
     margin-left: 1vw;
     margin-right: 2vw;
     margin-top: 5vw;
+    
 }
  
 
@@ -207,10 +209,7 @@ li i {
 div h8 {
     letter-spacing: 0.1vw;
     font-family: Impact, sans-serif;
-    
-    
     width: 5vw;
-    
 }
 
 /*styling of div containing phone information*/
@@ -220,33 +219,34 @@ div h8 {
     align-items: baseline;
     /*border: 1px solid rgb(197, 125, 16);*/
     width: 40%;
-    
+    margin-top: 1vw;
 }
 
 /*Addition of margin between phone icon and phone number*/
 #phone-icon {
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin-left: 1vw;
     margin-right: 2vw;
-    
+    margin-top: 1.1vw;
 }
 
 /*styling of email address div*/
 #email-address {
-    align-items: baseline;
-    display: flex;
+     margin-top: 1vw;
     /*border: 1px solid rgb(155, 16, 197);*/
     width: 50%;
-    margin-top: 2vw;
+    
 }
 div p{
     font-size: 2vw;
 }
 /*addition if margin between email icon and email address*/
 #email-icon {
+     margin-top: 1vw;
     font-size: 2vw;
-    margin-left: 4.5vw;
+    margin-left: 1.1vw;
     margin-right: 1.5vw;
+    color: rgb(3, 3, 3);
 }
 
 /*Media Query; tablets and larger (768px and up)*/
