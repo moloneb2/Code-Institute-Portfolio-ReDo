@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Sniglet:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -14,7 +15,7 @@
 }
 
 h2 {
-    font-family: 'Gabarito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -92,8 +93,8 @@ main {
 
 /*styling of main background picture*/
 #main-pic-bg {
-    background: url("../Images/Pic-Main-Section-5.jpg")50% 50% no-repeat;
-    overflow: hidden;
+    background: url("../Images/Pic-Main-Section-5.jpg")no-repeat center center/cover;
+    
 
 }
 
@@ -137,7 +138,7 @@ main {
 #inspirational-quote-text {
     font-family: 'oswald', sans-serif;
     font-style: italic;
-    font-size: 4vw;
+    font-size: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,6 +147,7 @@ main {
 /*styling of inspirational author*/
 #inspirational-quote-author {
     text-align: center;
+    font-size: 1.5vw;
 }
 
 /*styling of About Us div*/
@@ -163,7 +165,7 @@ main {
     border-radius: 1vw;
     margin-top: 10vw;
     margin-left: 9vw;
-    margin-bottom: 19vw;
+    margin-bottom: 29vw;
     height: 50vw;
 }
 
@@ -181,11 +183,12 @@ main {
 #about-us-title-box-text {
     display: flex;
     justify-content: center;
-
+    
     -webkit-text-stroke-width: 0.15vw;
     -webkit-text-stroke-color: black;
     color: orange;
-    font-size: 3vw;
+    font-size: 5vw;
+    font-weight: bold;
 }
 
 /*styling of About Us content box*/
@@ -196,7 +199,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100.2%;
-
+    margin-top: 1vw;
     height: 50vw;
 }
 
@@ -205,6 +208,7 @@ main {
     background: url("../Images/about-us-pic-A.jpg")no-repeat center center/cover;
     /* border: 1px solid rgb(224, 9, 9);*/
     border-radius: 0.4vw;
+    
     width: 33.3%;
     height: 50%;
 }
@@ -288,7 +292,7 @@ background-color: rgba(252, 246, 239, 0.5);
     border-radius: 1vw;
     margin-top: 10vw;
     margin-left: 9vw;
-    height: 26vw;
+    height: 15vw;
 }
 
 /*styling of Junior Beekeepers title box*/
@@ -320,17 +324,17 @@ background-color: rgba(252, 246, 239, 0.5);
     width: 100%;
     border-radius: 0.4vw;
     height: 20vw;
-    
+    margin-top: 2.5vw;
 }
 /*styling of the background colour for the Junior Beekeepers description*/
 
-#bee-keepers-description-background-colour {
+#junior-bee-keepers-description-background-colour {
     /*border: 1px solid rgb(15, 15, 15);*/
     background-color: rgb(250, 246, 246);
     opacity: 0.9;
     width: 80%;
     border-radius: 1vw;
-    height: 13%;
+    height: 35vw;
     z-index: -1;
     padding-top: 25vw;
     position: absolute;
