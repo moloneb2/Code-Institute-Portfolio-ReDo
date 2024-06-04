@@ -3,12 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Sniglet:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Oswald:wght@200..700&display=swap');
+
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+h2{
+    font-family: 'Gabarito' , sans-serif;
+
 }
 
 /* General styles */
@@ -94,7 +100,7 @@ main {
     flex-direction: column;
 }
 
-/*styling of the inspirational div*/
+/*styling of the inspirational quote div*/
 #inspirational-quote-div {
     background-color: rgba(252, 246, 239, 0.5);
     display: flex;
@@ -138,14 +144,93 @@ main {
 #inspirational-quote-author {
     text-align: center;
 }
-
+/*styling of About Us div*/
 #about-us {
-    border: 1px solid rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(252, 246, 239, 0.5);
+    opacity: 0.8;
+    /*border: 1px solid rgb(15, 15, 15);*/
     width: 80%;
+    border-radius: 1vw;
     margin-top: 10vw;
     margin-left: 9vw;
-    height: 20vw;
+    height: 30vw;
 }
+/*styling of About Us title box*/
+#about-us-title-box{
+    /*border: 1px solid rgb(224, 9, 9);*/
+    
+    margin-top: 1vw;
+    width: 100%;
+    
+    height: 5vw;
+}
+/*styling of About Us content box*/
+#about-us-content-box{
+     
+    /*border: 1px solid rgb(224, 9, 9);*/
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    
+    
+    
+    
+    
+    
+    width: 100%;
+    height: 25vw;
+}
+/*styling of image inside about-us-content-box-image-A*/
+    #about-us-content-box-image-A{
+        background: url("../Images/about-us-pic-A.jpg")no-repeat center center/cover;
+        /* border: 1px solid rgb(224, 9, 9);*/
+       
+        width: 33.3%;
+        height:50%;
+    }  
+    /*styling of image inside about-us-content-box-image-B*/
+    #about-us-content-box-image-B{
+        background: url("../Images/about-us-pic-B.jpg")no-repeat center center/cover;
+        /*border: 1px solid rgb(224, 9, 9);*/
+        
+        width: 33.3%;
+        height:50%;
+    }
+    /*styling of image inside about-us-content-box-image-C*/
+    #about-us-content-box-image-C{
+        background: url("../Images/about-us-pic-C.jpg")no-repeat center center/cover;
+         /*border: 1px solid rgb(224, 9, 9);*/
+        
+        width: 33.3%;
+        height:50%;
+    }
+    /*styling of image inside about-us-content-box-image-D*/
+    #about-us-content-box-image-D{
+        background: url("../Images/about-us-pic-D.jpg")no-repeat center center/cover;
+        /*border: 1px solid rgb(224, 9, 9);*/
+        
+        width: 33.3%;
+        height:50%;
+    }
+    /*styling of image inside about-us-content-box-image-E*/
+    #about-us-content-box-image-E{
+        background: url("../Images/about-us-pic-E.jpg")no-repeat center center/cover;
+         /*border: 1px solid rgb(224, 9, 9);*/
+        
+        width: 33.3%;
+        height:50%;
+    }
+    /*styling of image inside about-us-content-box-image-F*/
+    #about-us-content-box-image-F{
+        background: url("../Images/about-us-pic-F.jpg")no-repeat center center/cover;
+         /*border: 1px solid rgb(224, 9, 9);*/
+        
+        width: 33.3%;
+        height:50%;
+    }
+
 
 #junior-beekeepers {
     border: 1px solid rgb(15, 15, 15);
