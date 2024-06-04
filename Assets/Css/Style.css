@@ -34,7 +34,7 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
     position: fixed;
-    z-index: 99;
+    z-index: 4;
     width: 100%;
     height: 12vw;
 }
@@ -92,6 +92,7 @@ main {
 #main-pic-bg {
     background: url("../Images/Pic-Main-Section-5.jpg")50% 50% no-repeat;
     background-size: cover;
+    
 }
 
 /*styling of main container of the body*/
@@ -146,8 +147,11 @@ main {
 }
 /*styling of About Us div*/
 #about-us {
+     
     display: flex;
     flex-direction: column;
+    z-index: 2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background-color: rgba(252, 246, 239, 0.5);
     opacity: 0.8;
     /*border: 1px solid rgb(15, 15, 15);*/
@@ -155,7 +159,7 @@ main {
     border-radius: 1vw;
     margin-top: 10vw;
     margin-left: 9vw;
-    height: 30vw;
+    height: 50vw;
 }
 /*styling of About Us title box*/
 #about-us-title-box{
@@ -166,6 +170,16 @@ main {
     
     height: 5vw;
 }
+/*styling of About Us title text*/
+#about-us-title-box-text{
+    display: flex;
+    justify-content: center;
+    
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    font-size: 3vw;
+}
 /*styling of About Us content box*/
 #about-us-content-box{
      
@@ -173,20 +187,15 @@ main {
     display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+    width: 100.2%;
     
-    
-    
-    
-    
-    
-    width: 100%;
-    height: 25vw;
+    height: 50vw;
 }
 /*styling of image inside about-us-content-box-image-A*/
     #about-us-content-box-image-A{
         background: url("../Images/about-us-pic-A.jpg")no-repeat center center/cover;
         /* border: 1px solid rgb(224, 9, 9);*/
-       
+       border-radius: 0.4vw;
         width: 33.3%;
         height:50%;
     }  
@@ -194,7 +203,7 @@ main {
     #about-us-content-box-image-B{
         background: url("../Images/about-us-pic-B.jpg")no-repeat center center/cover;
         /*border: 1px solid rgb(224, 9, 9);*/
-        
+        border-radius: 0.4vw;
         width: 33.3%;
         height:50%;
     }
@@ -202,7 +211,7 @@ main {
     #about-us-content-box-image-C{
         background: url("../Images/about-us-pic-C.jpg")no-repeat center center/cover;
          /*border: 1px solid rgb(224, 9, 9);*/
-        
+         border-radius: 0.4vw;
         width: 33.3%;
         height:50%;
     }
@@ -210,7 +219,7 @@ main {
     #about-us-content-box-image-D{
         background: url("../Images/about-us-pic-D.jpg")no-repeat center center/cover;
         /*border: 1px solid rgb(224, 9, 9);*/
-        
+        border-radius: 0.4vw;
         width: 33.3%;
         height:50%;
     }
@@ -218,7 +227,7 @@ main {
     #about-us-content-box-image-E{
         background: url("../Images/about-us-pic-E.jpg")no-repeat center center/cover;
          /*border: 1px solid rgb(224, 9, 9);*/
-        
+         border-radius: 0.4vw;
         width: 33.3%;
         height:50%;
     }
@@ -226,16 +235,33 @@ main {
     #about-us-content-box-image-F{
         background: url("../Images/about-us-pic-F.jpg")no-repeat center center/cover;
          /*border: 1px solid rgb(224, 9, 9);*/
-        
+         border-radius: 0.4vw;
         width: 33.3%;
         height:50%;
     }
+    /*styling of the background colour for the About Us description*/
+    
+        #about-us-description-background-colour{
+            /*border: 1px solid rgb(15, 15, 15);*/
+            background-color: rgb(250, 246, 246);
+            opacity: 0.85;
+            width: 80%;
+            border-radius: 1vw;
+            height:9%;
+            
+            padding-top: 25vw;
+            position: absolute;
+          
+            top:91vw;
+            left:9vw;
+            
+        }
 
 
 #junior-beekeepers {
     border: 1px solid rgb(15, 15, 15);
     width: 80%;
-    margin-top: 10vw;
+    margin-top: 20vw;
     margin-left: 9vw;
     height: 20vw;
 }
