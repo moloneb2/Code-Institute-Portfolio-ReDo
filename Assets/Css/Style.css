@@ -107,6 +107,7 @@ main {
 /*styling of the inspirational quote div*/
 #inspirational-quote-div {
     background-color: rgba(252, 246, 239, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     /*border: 1px solid rgb(15, 15, 15);*/
@@ -119,7 +120,7 @@ main {
 
 /*styling of the inspirational title quote div*/
 #inspirational-quote {
-
+    
     /*border: 1px solid rgb(224, 9, 9);*/
     margin-top: 1vw;
     width: 99%;
@@ -156,8 +157,7 @@ main {
     display: flex;
     flex-direction: column;
     z-index: 2;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgba(252, 246, 239, 0.5);
     opacity: 0.8;
     /*border: 1px solid rgb(15, 15, 15);*/
@@ -172,7 +172,8 @@ main {
 /*styling of About Us title box*/
 #about-us-title-box {
     /*border: 1px solid rgb(224, 9, 9);*/
-
+    display: flex;
+    justify-content: center;
     margin-top: 1vw;
     width: 100%;
 
@@ -181,8 +182,7 @@ main {
 
 /*styling of About Us title text*/
 #about-us-title-box-text {
-    display: flex;
-    justify-content: center;
+   
     
     -webkit-text-stroke-width: 0.15vw;
     -webkit-text-stroke-color: black;
@@ -283,7 +283,7 @@ main {
     flex-direction: column;
 z-index: 2;
 
-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 background-color: rgba(252, 246, 239, 0.5);
     
 
@@ -297,7 +297,8 @@ background-color: rgba(252, 246, 239, 0.5);
 
 /*styling of Junior Beekeepers title box*/
 #junior-beekeepers-title-box {
-    
+    display: flex;
+    justify-content: center;
     
 
     margin-top: 1vw;
@@ -321,20 +322,22 @@ background-color: rgba(252, 246, 239, 0.5);
     opacity: 1;
     background: url("../Images/Junior-Beekeeper-pic-B.jpg")no-repeat center center/cover;
     border-radius: 0.4vw;
-    width: 100%;
+    width: 99.6%;
     border-radius: 0.4vw;
     height: 20vw;
     margin-top: 2.5vw;
+    margin-left: 0.01%;
 }
 /*styling of the background colour for the Junior Beekeepers description*/
 
 #junior-bee-keepers-description-background-colour {
     /*border: 1px solid rgb(15, 15, 15);*/
-    background-color: rgb(250, 246, 246);
-    opacity: 0.9;
+    
+    background-color: rgba(252, 246, 239, 0.8);
+    
     width: 80%;
     border-radius: 1vw;
-    height: 35vw;
+    height: 37vw;
     z-index: -1;
     padding-top: 25vw;
     position: absolute;
@@ -354,13 +357,47 @@ background-color: rgba(252, 246, 239, 0.5);
     color: orange;
     font-size: 3vw;
 }
-
-#meeting-times {
+/*styling of Meeting Times div*/
+#meeting-times-div {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
     border: 1px solid rgb(15, 15, 15);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    background-color: rgb(250, 246, 246);
+    opacity: 0.8;
     width: 80%;
+    border-radius: 1vw;
     margin-top: 45vw;
     margin-left: 9vw;
-    height: 20vw;
+    height: 55vw;
+}
+/*styling of Meeting Times title box*/
+#meeting-times-div-title-box{
+    display: flex;
+    justify-content: center;
+border: 1px solid rgb(224, 9, 9);
+width: 99%;
+height: 9vw;
+padding-top: 1vw;
+}
+/*styling of Meeting Times title box text*/
+#meeting-times-div-title-box-text{
+    
+    font-size: 5vw;
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    align-items: center;
+    
+}
+/*styling of Meeting Times content box*/
+#meeting-times-div-content-box{
+border: 1px solid rgb(224, 9, 9);
+width: 99%;
+height: 20vw;
 }
 
 #our-location {
