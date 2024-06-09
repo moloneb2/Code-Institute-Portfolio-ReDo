@@ -15,6 +15,10 @@
 }
 p{
     font-family: 'Sniglet', sans-serif;
+    font-size: 3vw;
+}
+div p {
+    font-size: 1.6vw;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -24,7 +28,11 @@ h3{
     font-family: 'Merienda One', 'Brush Script MT', 'cursive;'
 
 }
+h6{
 
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-small;
+}
 /* General styles */
 body {
     min-height: 100vh;
@@ -44,7 +52,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    height: 12vw;
+    height: 10vw;
 }
 
 header a {
@@ -62,7 +70,22 @@ header h1 {
     margin-top: 3.1vw;
     width: 85vw;
 }
-
+h2{
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    font-size: 5vw;
+    font-weight: bold;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+tr{
+    font-size: 2vw;
+}
+th{
+    font-size: 2vw;
+}
 /*hamburger menu from font awesome */
 #hamburger-menu {
     font-size: 4vw;
@@ -186,16 +209,7 @@ main {
     height: 5vw;
 }
 
-/*styling of About Us title text*/
-#about-us-title-box-text {
-   
-    
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    font-size: 5vw;
-    font-weight: bold;
-}
+ 
 
 /*styling of About Us content box*/
 #about-us-content-box {
@@ -353,16 +367,7 @@ background-color: rgba(252, 246, 239, 0.5);
 
 }
 
-/*styling of Junior Beekeepers title text*/
-#junior-beekeepers-title-box-text {
-    display: flex;
-    justify-content: center;
 
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    font-size: 3vw;
-}
 /*styling of Meeting Times div*/
 #meeting-times-div {
     padding: 1vw;
@@ -378,7 +383,7 @@ background-color: rgba(252, 246, 239, 0.5);
     border-radius: 1vw;
     margin-top: 45vw;
     margin-left: 9vw;
-    height: 50vw;
+    height: 70vw;
 }
 /*styling of Meeting Times title box*/
 #meeting-times-div-title-box{
@@ -391,20 +396,11 @@ border-radius: 1vw;
 height: 9vw;
 padding-top: 1vw;
 }
-/*styling of Meeting Times title box text*/
-#meeting-times-div-title-box-text{
-    
-    font-size: 5vw;
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    align-items: center;
-    
-}
+
 /*styling of Meeting Times content box*/
 #meeting-times-div-content-box{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-border: 1px solid rgb(224, 9, 9);
+border: 1px solid rgb(224, 9, 134);
 width: 99%;
 border-radius: 1vw;
 height: 20vw;
@@ -413,30 +409,45 @@ height: 20vw;
 /*styling of table for Meeting Times*/
 
 #meeting-times-table{
+    display: flex;
+    justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgb(224, 9, 9);
+    border: 1px solid rgb(124, 224, 9);
     width: 99%;
     border-radius: 1vw;
-    height: 40%; 
+    height: 50%; 
 }
-/*styling of Meeting Times title box*/
-#meeting-times-table-title-box{
+#meeting-times-table-information-div{
     display: flex;
-    justify-content: center;
-border: 1px solid rgb(224, 9, 9);
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-width: 99%;
-border-radius: 1vw;
-height: 8vw;
-padding-top: 1vw;
+    
+    flex-direction: column;
+    border: 1px solid rgb(10, 69, 138);
+    
+    width: 45vw;
+    border-radius: 1vw;
+    height: 30vw;
 }
+#meeting-times-table-information-div-text-A{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(9, 224, 213);
+    width: 44vw;
+    height: 10vw;
+}
+#meeting-times-table-information-div-text-B{
+    border: 1px solid rgb(9, 224, 213);
+    width: 44vw;
+    height: 20vw;
+}
+
+
 /*styling of Meeting Times table content box*/
 #meeting-times-table-content-box{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-border: 1px solid rgb(224, 9, 9);
+border: 1px solid rgb(208, 255, 0);
 width: 99%;
 border-radius: 1vw;
-height: 10vw;
+height: 17vw;
 
 }
 
@@ -604,9 +615,7 @@ div h8 {
 
 }
 
-div p {
-    font-size: 2vw;
-}
+
 
 /*addition if margin between email icon and email address*/
 #email-icon {
