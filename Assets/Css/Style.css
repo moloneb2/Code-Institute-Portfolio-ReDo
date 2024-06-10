@@ -80,12 +80,29 @@ h2{
 h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-tr{
-    font-size: 2vw;
-}
-th{
-    font-size: 2vw;
-}
+ td, th {  
+    background-color: rgba(250, 243, 243, 0.5);
+    border: 1px solid inherit;
+    text-align: left;
+    font-size: 1vw;
+    width: 40vw;
+    padding: 1vw;
+    
+  }
+  
+  table {
+    border-radius: 3vw;
+    border: 1px solid inherit;
+    text-align: left;
+    font-size: 1vw;
+    width: 40vw;
+    margin-top: 2vw;
+    margin-left: 4.5vw;
+    border-collapse: collapse;
+    
+  }
+  
+  
 /*hamburger menu from font awesome */
 #hamburger-menu {
     font-size: 4vw;
@@ -286,7 +303,7 @@ main {
     opacity: 0.8;
     width: 80%;
     border-radius: 1vw;
-    height: 13%;
+    height: 11%;
 
     padding-top: 25vw;
     position: absolute;
@@ -369,97 +386,104 @@ background-color: rgba(252, 246, 239, 0.5);
 
 
 /*styling of Meeting Times div*/
-#meeting-times-div {
-    padding: 1vw;
+#meeting-times-container{
     display: flex;
     flex-direction: column;
     z-index: 2;
-    border: 1px solid rgb(15, 15, 15);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    z-index: 2;
-    background-color: rgb(250, 246, 246);
-    opacity: 0.8;
+    background-color: rgba(252, 246, 239, 0.5);
+    border: 1px solid rgb(15, 15, 15);
     width: 80%;
     border-radius: 1vw;
     margin-top: 45vw;
     margin-left: 9vw;
-    height: 70vw;
-}
+    height: 40vw;  
+}  
 /*styling of Meeting Times title box*/
-#meeting-times-div-title-box{
+#meeting-times-title-box{
+    
     display: flex;
     justify-content: center;
-border: 1px solid rgb(224, 9, 9);
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-width: 99%;
-border-radius: 1vw;
-height: 9vw;
-padding-top: 1vw;
+    margin-top: 1vw;
+    width: 100%;
+    height: 5vw;
 }
-
 /*styling of Meeting Times content box*/
-#meeting-times-div-content-box{
+#meeting-times-content-box{
+    padding: 1vw;
+    border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-border: 1px solid rgb(224, 9, 134);
-width: 99%;
-border-radius: 1vw;
-height: 20vw;
-
-}
-/*styling of table for Meeting Times*/
-
-#meeting-times-table{
-    display: flex;
+     display: flex;
+     display: inline-block;
     justify-content: space-around;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgb(124, 224, 9);
-    width: 99%;
-    border-radius: 1vw;
-    height: 50%; 
-}
-#meeting-times-table-information-div{
-    display: flex;
-    
-    flex-direction: column;
-    border: 1px solid rgb(10, 69, 138);
-    
-    width: 45vw;
-    border-radius: 1vw;
-    height: 30vw;
-}
-#meeting-times-table-information-div-text-A{
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid rgb(9, 224, 213);
-    width: 44vw;
+    width: 90%;
     height: 10vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
 }
-#meeting-times-table-information-div-text-B{
-    border: 1px solid rgb(9, 224, 213);
-    width: 44vw;
-    height: 20vw;
-}
-
-
-/*styling of Meeting Times table content box*/
-#meeting-times-table-content-box{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-border: 1px solid rgb(208, 255, 0);
-width: 99%;
-border-radius: 1vw;
-height: 17vw;
-
+/*styling of meeting-times-content-box-table*/
+#meeting-times-content-box-table{
+    display: flex;
+    justify-content: space-around;
 }
 
+
+
+   
+
+ 
+ 
+
+
+ 
 #our-location {
-    border: 1px solid rgb(15, 15, 15);
+    border: 1px solid rgb(185, 252, 2);
     width: 80%;
     margin-top: 10vw;
     margin-left: 9vw;
     margin-bottom: 10vw;
-    height: 20vw;
+    height: 50vw;
 }
+/**/
+#our-location-title-box{
+    border: 1px solid rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    width: 100%;
+    height: 11vw;
+}
+/**/
+#our-location-content-box{
+border: 1px solid rgb(220, 224, 9);
+display: flex;
+flex-direction: column;
+width: 100.2%;
 
+height: 35vw;
+}
+/**/
+#our-location-content-box-title{
+    border: 1px solid rgb(84, 9, 224);
+
+    width: 99%;
+    
+    height: 10vw; 
+}
+/**/
+#our-location-content-box-text{
+display: flex;
+margin: auto;
+}
+/**/
+#our-location-content-box-map{
+    margin: auto;
+    border: 1px solid rgb(9, 224, 27);
+    
+    width: 70%;
+    
+    height: 20vw;   
+}
 /*styling of the nav bar. default setting is to display: 'none'*/
 #menu {
     background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;
