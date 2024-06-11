@@ -199,10 +199,30 @@ nav li a {
         margin-right: 2vw;
         margin-left: 2vw;
     }
+    #photos {
+      column-count: 3;
+      column-gap: 0;
+  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
+      column-count: 2;
+      column-gap: 0;
+  }
+}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  #menu a:hover {
+      border-bottom: 1px solid #3a3a3a;
+  }
+
+  /* Gallery */
+  #photos {
+      column-count: 3;
+      column-gap: 0;
+      row-gap: 0;
+  }
+}
