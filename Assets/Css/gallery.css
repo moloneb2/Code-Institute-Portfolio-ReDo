@@ -71,6 +71,13 @@ header {
 nav{
   z-index: 100;
 }
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+#photos{
+  line-height: 0;
+}
 
   
   
