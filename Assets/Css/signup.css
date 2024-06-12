@@ -116,7 +116,7 @@ main {
 }
 /*Sign Up COntainer*/
 #sign-up-container{
-    margin-left: 10vw;
+    margin-left: 3vw;
     margin-top: 10vw;
     display: flex;
     flex-direction: row;
@@ -125,14 +125,65 @@ main {
     border-left: 1px solid #ffe01b;
     border-width: 1vw;
     
-    width: 80%;
+    width: 90%;
     height: 100vw;
      
 }
 #sign-up-container-left{
-    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: inherit;
+}
+#sign-up-container-right{
     width: 30%;
     background-color: #ffe01b;
+    
+}
+#sign-up-first-name{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: 1px solid aqua;
+    width: 100%;
+    height: 12vw;
+    
+}
+#first-name{
+    width: 32vw;
+    height: 8vw;
+}
+#sign-up-last-name{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: 1px solid rgb(0, 255, 55);
+    width: 100%;
+    height: 12vw;
+}
+#last-name{
+    width: 32vw;
+    height: 8vw;
+}
+#sign-up-last-email{
+    display: block;
+    padding-top: 4vw;
+    border: 1px solid rgb(255, 102, 0);
+    width: 100%;
+    height: 20vw;
+}
+#email-address{
+    margin-top: 1vw;
+    width: 60vw;
+    height: 8vw;
+}
+#radio-buttons{
+    margin-top: 5vw;
+    border: 1px solid rgb(255, 102, 0);
+    width: 100%;
+    height: 30vw;
 }
  
 

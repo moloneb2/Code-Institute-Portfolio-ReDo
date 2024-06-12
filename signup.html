@@ -23,33 +23,74 @@
 <body>
     <!-- Header -->
     <header id="header-bg">
-        
-            <a href="signup.html" id="home-button">Home</a>
-        
+
+        <a href="index.html" id="home-button">Home</a>
+
     </header>
 
     <!-- Main content -->
     <main id="main-container">
         <section>
-            <div id="gallery-logo"><h2>Sign Up</h2></div>
+            <div id="gallery-logo">
+                <h2>Sign Up</h2>
+            </div>
         </section>
 
         <section>
             <div id="sign-up-container">
-                <div id="sign-up-container-left"></div>
+                <div id="sign-up-container-left">
+                    <form id="signup-form" method="POST" action="form.html">
+                        <div id="sign-up-first-name">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                            <input type="text" name="first_name" id="first-name" class="text-input" required>
+                            <br>
+                        </div>
+                        <div id="sign-up-last-name">
+                            <label for="last-name">
+                                Last Name
+                            </label>
+                            <input type="text" name="last_name" id="last-name" class="text-input" required>
+                            <br>
+                        </div>
+                        <div id="sign-up-last-email">
+                            <label for="email-address">
+                                Email Address
+                            </label>
+                            <input type="email" name="email_address" id="email-address" class="text-input" required>
+                            <br>
+                        </div>
+                        <div id="radio-buttons">
+                            <div>
+                                <label for="road">Adult Bee Keepers</label>
+                                <input type="radio" name="club-type" id="adult" value="adult" required checked>
+                            </div>
+                            <div>
+                                <label for="trail">Junior Bee Keepers</label>
+                                <input type="radio" name="club-type" id="junior" value="junior" required>
+                            </div>
+                            <div>
+                                <label for="both">Both</label>
+                                <input type="radio" name="club-type" id="both" value="both" required>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
                 <div id="sign-up-container-right"></div>
-                 
+
             </div>
         </section>
-         
-              
-                 
+
+
+
 
     </main>
 
     <!-- Footer -->
     <footer>
-        
+
     </footer>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/60adf61263.js" crossorigin="anonymous"></script>
