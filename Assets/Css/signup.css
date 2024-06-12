@@ -96,7 +96,7 @@ nav{
 
 /*Header background picture of the sky*/
 #header-bg {
-    background-color: #3a3a3a;
+    background-color: #ffe01b;
     z-index: 99;
 }
 
@@ -114,6 +114,27 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
+/*Sign Up COntainer*/
+#sign-up-container{
+    margin-left: 10vw;
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    
+    border-left: 1px solid #ffe01b;
+    border-width: 1vw;
+    
+    width: 80%;
+    height: 100vw;
+     
+}
+#sign-up-container-left{
+    
+    width: 30%;
+    background-color: #ffe01b;
+}
+ 
 
 
 
