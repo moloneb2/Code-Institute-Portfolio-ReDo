@@ -27,8 +27,9 @@ h2 {
 
 }
 h3{
-    font-family: 'Roboto', 'Brush Script MT', 'cursive;'
-
+    font-family: 'Roboto', 'Brush Script MT', 'cursive;';
+    font-size: small;
+    
 }
 h6{
 
@@ -56,20 +57,28 @@ header {
     width: 100%;
     height: 10vw;
 }
+/*Header background picture of the sky*/
+#header-sky-bg {
+    padding-left: 0;
+    background: url("../Images/inspirational-quote-bg.jpg")no-repeat center center/cover;
+    z-index: 99;
+}
  
  
  
 #home-button{
+    font-family: 'Rubik' , sans-serif;
   cursor: pointer;
   border: none;
-  color: white;
+  color:#3a3a3a;
   background-color: inherit;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: bold;
-  text-decoration: none;
-  margin-top: 5vw;
   margin-left: 1vw;
-  
+  margin-right: 2vw;
+  margin-top: 4.3vw;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 nav{
@@ -105,10 +114,16 @@ nav{
     z-index: 99;
 }
 
-/*Bee Keepers logo inside header element*/
 #Bee-Keepers-logo {
-    text-align: center;
-    font-size: 5vw;
+    font-size: small;
+    font-family: 'Sniglet', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    margin-top: 3.1vw;
+    width: 85vw;
 }
 
 
@@ -119,10 +134,24 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
+#gallery-logo{
+    box-shadow: 0 2px 2px #3a3a3a;
+    
+    background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  
+  width: 100%;
+  height: 20vw;
+  
+    
+
+}
 /*Sign Up COntainer*/
 #sign-up-container{
     margin-left: 3vw;
-    margin-top: 10vw;
+    margin-top: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -131,7 +160,7 @@ main {
     border-width: 1vw;
     
     width: 90%;
-    height: 100vw;
+    height: 110vw;
      
 }
 #sign-up-container-left{
