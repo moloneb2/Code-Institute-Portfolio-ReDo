@@ -66,7 +66,7 @@ header {
     z-index: 99;
 }
 
-#Bee-Keepers-logo {
+#bee-keepers-logo {
     
     font-family: 'Sniglet', sans-serif;
     text-transform: uppercase;
@@ -127,11 +127,7 @@ nav{
     z-index: 99;
 }
 
-/*Bee Keepers logo inside header element*/
-#Bee-Keepers-logo {
-    text-align: center;
-    font-size: 5vw;
-}
+
 
 
 
