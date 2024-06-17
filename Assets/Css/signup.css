@@ -13,29 +13,32 @@
     margin: 0;
     box-sizing: border-box;
 }
-p{
-    font-family: 'Sniglet', sans-serif;
-    font-size: 3vw;
+a{
+    text-decoration: none;
 }
 div p {
     font-size: 1.6vw;
 }
+
 h2 {
     color: #3a3a3a;
     font-family: 'Roboto', sans-serif;
     font-size: 4vw;
 
 }
-h3{
+
+h3 {
     font-family: 'Roboto', 'Brush Script MT', 'cursive;';
-    font-size: small;
-    
+    font-size: x-small;
+
 }
-h6{
+
+h6 {
 
     font-family: 'Roboto', sans-serif;
     font-size: xx-small;
 }
+
 /* General styles */
 body {
     min-height: 50vh;
@@ -43,7 +46,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    
+
 }
 
 /* Header */
@@ -57,43 +60,46 @@ header {
     width: 100%;
     height: 10vw;
 }
+
 /*Header background picture of the sky*/
 #header-sky-bg {
     padding-left: 0;
     background: url("../Images/inspirational-quote-bg.jpg")no-repeat center center/cover;
     z-index: 99;
 }
- 
- 
- 
-#home-button{
-    font-family: 'Rubik' , sans-serif;
-  cursor: pointer;
-  border: none;
-  color:#3a3a3a;
-  background-color: inherit;
-  font-size: 3vw;
-  font-weight: bold;
-  margin-left: 1vw;
-  margin-right: 2vw;
-  margin-top: 4.3vw;
-  cursor: pointer;
-  text-decoration: underline;
+
+
+
+#home-button {
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    border: none;
+    color: #3a3a3a;
+    background-color: inherit;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-left: 2vw;
+    margin-right: 5vw;
+    margin-top: 4.3vw;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-nav{
-  z-index: 100;
+nav {
+    z-index: 100;
 }
+
 #photos img {
-  width: 100%;
-  line-height: 1em;
-}
-#photos{
-  line-height: 0;
+    width: 100%;
+    line-height: 1em;
 }
 
-  
-  
+#photos {
+    line-height: 0;
+}
+
+
+
 /*hamburger menu from font awesome */
 #hamburger-menu {
     font-size: 4vw;
@@ -115,6 +121,8 @@ nav{
 }
 
 #Bee-Keepers-logo {
+    display: flex;
+    justify-content: space-between;
     font-size: small;
     font-family: 'Sniglet', sans-serif;
     text-transform: uppercase;
@@ -134,47 +142,42 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
-#gallery-logo{
-    box-shadow: 0 2px 2px #3a3a3a;
-    
-    background-color: orange;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 0;
-  
-  width: 100%;
-  height: 20vw;
-  
-    
 
-}
 /*Sign Up COntainer*/
-#sign-up-container{
-    margin-left: 3vw;
+#sign-up-container {
+    margin-left: 2.5vw;
     margin-top: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: right;
-    
+
     border-left: 1px solid #ffe01b;
     border-width: 1vw;
-    
-    width: 90%;
+
+    width: 95%;
     height: 110vw;
-     
+
 }
-#sign-up-container-left{
+
+#submit-form-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+#sign-up-container-left {
     display: flex;
     flex-direction: column;
     width: 70%;
     background-color: inherit;
 }
-#sign-up-container-right{
+
+#sign-up-container-right {
     width: 30%;
     background-color: #ffe01b;
-    
+
 }
-#sign-up-first-name{
+
+#sign-up-first-name {
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -182,13 +185,15 @@ main {
     border: 1px solid aqua;
     width: 100%;
     height: 12vw;
-    
+
 }
-#first-name{
-    width: 32vw;
-    height: 8vw;
+
+#first-name {
+    width: 35vw;
+    height: 6vw;
 }
-#sign-up-last-name{
+
+#sign-up-last-name {
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -197,35 +202,62 @@ main {
     width: 100%;
     height: 12vw;
 }
-#last-name{
-    width: 32vw;
-    height: 8vw;
+
+#last-name {
+    width: 35vw;
+    height: 6vw;
 }
-#sign-up-last-email{
+
+#sign-up-last-email {
     display: block;
     padding-top: 4vw;
+    padding-left: 3vw;
     border: 1px solid rgb(255, 102, 0);
     width: 100%;
     height: 20vw;
 }
-#email-address{
+
+#sign-up-email-address {
     margin-top: 1vw;
-    width: 60vw;
-    height: 8vw;
+    width: 55vw;
+    height: 5vw;
+
 }
-#radio-buttons{
+
+#radio-buttons {
+    padding-left: 3vw;
     margin-top: 5vw;
     border: 1px solid rgb(0, 183, 255);
     width: 100%;
-    height: 30vw;
+    height: 35vw;
 }
-#submit-form{
+ 
+
+#submit-form {
+    padding-top: 1vw;
+    padding-left: 3vw;
     margin-top: 5vw;
     border: 1px solid rgb(255, 166, 0);
     width: 100%;
-    height: 10vw; 
+    height: 10vw;
 }
- 
+#submit-button{
+    
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    height: 4vw;
+    width: 12vw;
+    font-weight: bold;
+    font-size: 3vw;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    
+
+
+}
+
 
 
 
@@ -234,15 +266,18 @@ main {
     display: flex;
     flex-direction: column;
 }
-#gallery-logo{
-  border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 12vw;
-  
-  width: 100%;
-  height: 5vw;
+
+#gallery-logo {
+    padding-top: 0.6vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vw;
+    width: 100%;
+    height: 7vw;
+    box-shadow: 0 2px 2px #3a3a3a;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -432,6 +467,7 @@ div h8 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
 /*Media Query; tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
     #hamburger-menu {
@@ -440,30 +476,31 @@ div h8 {
         margin-right: 2vw;
         margin-left: 2vw;
     }
+
     #photos {
-      column-count: 3;
-      column-gap: 0;
-  }
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
-  #photos {
-      column-count: 2;
-      column-gap: 0;
-  }
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  #menu a:hover {
-      border-bottom: 1px solid #3a3a3a;
-  }
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
 
-  /* Gallery */
-  #photos {
-      column-count: 3;
-      column-gap: 0;
-      row-gap: 0;
-  }
+    /* Gallery */
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+        row-gap: 0;
+    }
 }
