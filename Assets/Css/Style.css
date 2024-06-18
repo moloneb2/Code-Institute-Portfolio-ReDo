@@ -179,13 +179,13 @@ nav li a {
 }
 
 /*styling of main container of the body*/
-#main-container {
+#main-page-container {
     display: flex;
     flex-direction: column;
 }
 
 /*styling of the inspirational quote container*/
-#inspirational-quote-div {
+#inspirational-quote-container {
     background-color: rgba(252, 246, 239, 0.5);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
@@ -231,7 +231,7 @@ nav li a {
 
 
 /*styling of About Us container*/
-#about-us {
+#about-us-container {
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -331,7 +331,7 @@ nav li a {
 
 /*styling of Junior Beekeepers container*/
 
-#junior-beekeepers {
+#junior-beekeepers-container {
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -467,7 +467,7 @@ td, th {
     
   }
 /*styling of Our-Location container*/
-#our-location {
+#our-location-container {
     border: 1px solid rgb(252, 94, 2);
     background-color: rgba(252, 246, 239, 0.5);
     width: 80%;
@@ -565,15 +565,18 @@ footer {
 /*styling of children divs - containing 'contact us' and 'follow us' */
 #child-div {
 
-    display: flex;
+     display: flex;
     border: 1px inherit;
     height: 100%;
-
+     
 }
 
 /*extra margin-top in child-div containing social media icons*/
 #child-div-A {
-    margin-bottom: 4.5vw;
+    
+  
+    align-content: center;
+    margin-top: 1vw;
 }
 
 /*styling of social media icons*/
