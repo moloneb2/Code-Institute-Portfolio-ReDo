@@ -7,59 +7,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-/* Asterisk wildcard selector to override default styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by the browser. Code taken from Love Running Project */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 p{
     font-family: 'Sniglet', sans-serif;
     font-size: 3vw;
 }
+
 div p {
     font-size: 1.6vw;
 }
-h2 {
+
+h2{
     font-family: 'Roboto', sans-serif;
-
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    font-size: 70%;
+    font-weight: bold;
 }
+
+
 h3{
-    font-family: 'Merienda One', 'Brush Script MT', 'cursive;'
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+
 h6{
 
     font-family: 'Roboto', sans-serif;
     font-size: xx-small;
 }
-/* General styles */
+/* General styles for body page */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
     color: #3a3a3a;
-    
 }
 
-/* Header */
+/* Header style*/
 header {
     display: flex;
-
     box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
     height: 10vw;
-}
-
-/*Header background picture of the sky*/
-#header-sky-bg {
-    padding-left: 0;
-    background: url("../Images/inspirational-quote-bg.jpg")no-repeat center center/cover;
-    z-index: 99;
 }
 
 header a {
@@ -78,39 +79,7 @@ header h1 {
     width: 85vw;
     font-size: 10%;
 }
-h2{
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    font-size: 70%;
-    font-weight: bold;
-}
-h3{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
- td, th {  
-    background-color: rgba(250, 243, 243, 0.5);
-    border: 1px solid inherit;
-    text-align: left;
-    font-size: 1vw;
-    width: 40vw;
-    padding: 1vw;
-    
-  }
-  
-  table {
-    border-radius: 3vw;
-    border: 1px solid inherit;
-    text-align: left;
-    font-size: 1vw;
-    width: 40vw;
-    margin-top: 2vw;
-    margin-left: 4.5vw;
-    border-collapse: collapse;
-    
-  }
-  
-  
+
 /*hamburger menu from font awesome */
 #hamburger-menu {
     font-size: 80%;
@@ -125,7 +94,12 @@ h3{
     transition: 0.5s;
 }
 
-
+/*Header background picture of the sky*/
+#header-sky-bg {
+    padding-left: 0;
+    background: url("../Images/inspirational-quote-bg.jpg")no-repeat center center/cover;
+    z-index: 99;
+}
 
 /*Bee Keepers logo inside header element*/
 #bee-keepers-logo {
@@ -139,402 +113,15 @@ h3{
     -webkit-text-stroke-color: black;
     color: rgb(247, 161, 2);
     margin-top: 3.1vw;
-    
-     
 }
-
-
 
 /* Main content */
 main {
 
-    /* Make main element take up any surplus space to push footer down */
+    /* Make main element take up any surplus space to push footer down. code taken from Love Running Project */
     flex: 1 0 auto;
 }
 
-/*styling of main background picture*/
-#main-pic-bg {
-    background: url("../Images/Pic-Main-Section-5.jpg")no-repeat center center/cover;
-    
-
-}
-
-/*styling of main container of the body*/
-#main-container {
-    display: flex;
-    flex-direction: column;
-}
-
-/*styling of the inspirational quote div*/
-#inspirational-quote-div {
-    background-color: rgba(252, 246, 239, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    flex-direction: column;
-    /*border: 1px solid rgb(15, 15, 15);*/
-    width: 80%;
-    border-radius: 0.5vw;
-    margin-top: 20vw;
-    margin-left: 9vw;
-    height: 16vw;
-}
-
-/*styling of the inspirational title quote div*/
-#inspirational-quote {
-    
-    /*border: 1px solid rgb(224, 9, 9);*/
-    margin-top: 1vw;
-    width: 99%;
-    height: 10vw;
-}
-
-/*styling of the inspirational title div*/
-#inspirational-quote-title {
-    /*border: 1px solid rgb(224, 9, 9);*/
-
-    width: 99%;
-    height: 5vw;
-}
-
-/*styling of the inspirational quote text*/
-#inspirational-quote-text {
-    font-family: 'oswald', sans-serif;
-    font-style: italic;
-    font-size: 2.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*styling of inspirational author*/
-#inspirational-quote-author {
-    text-align: center;
-    font-size: 1.5vw;
-}
-
-/*styling of About Us div*/
-#about-us {
-
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgba(252, 246, 239, 0.5);
-    opacity: 0.8;
-    /*border: 1px solid rgb(15, 15, 15);*/
-    width: 80%;
-    border-radius: 1vw;
-    margin-top: 10vw;
-    margin-left: 9vw;
-    margin-bottom: 29vw;
-    height: 50vw;
-}
-
-/*styling of About Us title box*/
-#about-us-title-box {
-    /*border: 1px solid rgb(224, 9, 9);*/
-    display: flex;
-    justify-content: center;
-    margin-top: 1vw;
-    width: 100%;
-
-    height: 5vw;
-}
-
- 
-
-/*styling of About Us content box*/
-#about-us-content-box {
-
-    /*border: 1px solid rgb(224, 9, 9);*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100.2%;
-    margin-top: 1vw;
-    height: 50vw;
-}
-
-/*styling of image inside about-us-content-box-image-A*/
-#about-us-content-box-image-A {
-    background: url("../Images/about-us-pic-A.jpg")no-repeat center center/cover;
-    /* border: 1px solid rgb(224, 9, 9);*/
-    border-radius: 0.4vw;
-    
-    width: 33.3%;
-    height: 50%;
-}
-
-/*styling of image inside about-us-content-box-image-B*/
-#about-us-content-box-image-B {
-    background: url("../Images/about-us-pic-B.jpg")no-repeat center center/cover;
-    /*border: 1px solid rgb(224, 9, 9);*/
-    border-radius: 0.4vw;
-    width: 33.3%;
-    height: 50%;
-}
-
-/*styling of image inside about-us-content-box-image-C*/
-#about-us-content-box-image-C {
-    background: url("../Images/about-us-pic-C.jpg")no-repeat center center/cover;
-    /*border: 1px solid rgb(224, 9, 9);*/
-    border-radius: 0.4vw;
-    width: 33.3%;
-    height: 50%;
-}
-
-/*styling of image inside about-us-content-box-image-D*/
-#about-us-content-box-image-D {
-    background: url("../Images/about-us-pic-D.jpg")no-repeat center center/cover;
-    /*border: 1px solid rgb(224, 9, 9);*/
-    border-radius: 0.4vw;
-    width: 33.3%;
-    height: 50%;
-}
-
-/*styling of image inside about-us-content-box-image-E*/
-#about-us-content-box-image-E {
-    background: url("../Images/about-us-pic-E.jpg")no-repeat center center/cover;
-    /*border: 1px solid rgb(224, 9, 9);*/
-    border-radius: 0.4vw;
-    width: 33.3%;
-    height: 50%;
-}
-
-/*styling of image inside about-us-content-box-image-F*/
-#about-us-content-box-image-F {
-    background: url("../Images/about-us-pic-F.jpg")no-repeat center center/cover;
-    /*border: 1px solid rgb(224, 9, 9);*/
-    border-radius: 0.4vw;
-    width: 33.3%;
-    height: 50%;
-}
-
-/*styling of the background colour for the About Us description*/
-
-#about-us-description-background-colour {
-    /*border: 1px solid rgb(15, 15, 15);*/
-    background-color: rgb(250, 246, 246);
-    opacity: 0.8;
-    width: 80%;
-    border-radius: 1vw;
-    height: 11%;
-
-    padding-top: 25vw;
-    position: absolute;
-
-    top: 91vw;
-    left: 9vw;
-
-}
-
-/*styling of Junior Beekeepers div*/
-
-#junior-beekeepers {
-    display: flex;
-    flex-direction: column;
-z-index: 2;
-
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-background-color: rgba(252, 246, 239, 0.5);
-    
-
-    /*border: 1px solid rgb(15, 15, 15);*/
-    width: 80%;
-    border-radius: 1vw;
-    margin-top: 10vw;
-    margin-left: 9vw;
-    height: 15vw;
-}
-
-/*styling of Junior Beekeepers title box*/
-#junior-beekeepers-title-box {
-    display: flex;
-    justify-content: center;
-    
-
-    margin-top: 1vw;
-    width: 100%;
-
-    height: 5vw;
-}
-#junior-beekeepers-title-box-text{
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    font-size: 70%;
-    font-weight: bold;
-}
-
-/*styling of Junior Beekeepers content box*/
-#junior-beekeepers-content-box {
-
-    /*border: 1px solid rgb(224, 9, 9);*/
-
-    width: 100.2%;
-
-    height: 20vw;
-}
-
-/*styling of image inside about-us-content-box-image-A*/
-#junior-beekeeper-content-box-image-A {
-    opacity: 1;
-    background: url("../Images/Junior-Beekeeper-pic-B.jpg")no-repeat center center/cover;
-    border-radius: 0.4vw;
-    width: 99.6%;
-    border-radius: 0.4vw;
-    height: 20vw;
-    margin-top: 2.5vw;
-    margin-left: 0.01%;
-}
-/*styling of the background colour for the Junior Beekeepers description*/
-
-#junior-bee-keepers-description-background-colour {
-    /*border: 1px solid rgb(15, 15, 15);*/
-    
-    background-color: rgba(252, 246, 239, 0.8);
-    
-    width: 80%;
-    border-radius: 1vw;
-    height: 37vw;
-    z-index: -1;
-    padding-top: 25vw;
-    position: absolute;
-
-    top: 150vw;
-    left: 9vw;
-
-}
-
-
-/*styling of Meeting Times div*/
-#meeting-times-container{
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgba(252, 246, 239, 0.5);
-    border: 1px solid rgb(15, 15, 15);
-    width: 80%;
-    border-radius: 1vw;
-    margin-top: 45vw;
-    margin-left: 9vw;
-    height: 40vw;  
-}  
-/*styling of Meeting Times title box*/
-#meeting-times-title-box{
-    
-    display: flex;
-    justify-content: center;
-    margin-top: 1vw;
-    width: 100%;
-    height: 5vw;
-}
-#meeting-times-title-box-text{
-    -webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    font-size: 70%;
-    font-weight: bold;
-}
-/*styling of Meeting Times content box*/
-#meeting-times-content-box{
-    padding: 1vw;
-    border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     display: flex;
-     display: inline-block;
-    justify-content: space-around;
-    width: 90%;
-    height: 10vw;
-    margin-top: 2vw;
-    margin-left: 4vw;
-}
-/*styling of meeting-times-content-box-table*/
-#meeting-times-content-box-table{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
-   
-
- 
- 
-
-
- 
-#our-location {
-    border: 1px solid rgb(252, 94, 2);
-    background-color: rgba(252, 246, 239, 0.5);
-    width: 80%;
-    border-radius: 1vw;
-    margin-top: 10vw;
-    margin-left: 9vw;
-    margin-bottom: 10vw;
-    height: 50vw;
-}
-/**/
-#our-location-title-box{
-    border: 1px solid rgb(219, 13, 13);
-    display: flex;
-    justify-content: center;
-    margin-top: 1vw;
-    width: 100%;
-    height: 9vw;
-    padding-top: 1vw;
-}
-/**/
-#our-location-content-box{
-border: 1px solid rgb(16, 224, 9);
-display: flex;
-
-flex-direction: column;
-width: 92%;
-margin-left: 5vw;
-height: 39vw;
-}
-/**/
-#our-location-content-box-title{
-    border: 1px solid rgb(84, 9, 224);
-    border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     display: flex;
-     
-     margin-left: 5vw;
-    width: 90%;
-    
-    height: 12vw; 
-}
-/**/
-#our-location-content-box-text{
-
--webkit-text-stroke-width: 0.15vw;
-    -webkit-text-stroke-color: black;
-    color: orange;
-    font-size: 70%;
-    font-weight: bold;
-}
-/**/
-#our-location-content-box-map{
-    margin: auto;
-    border: 1px solid rgb(91, 9, 224);
-     
- 
-height: 25vw;   
-width: 100%;
-}
-#google-map{
-    position: relative;
-     
-
-}
-.google-map iframe{
-     height: 25vw;
-     width: 70%;
-    position: absolute;
-}
 /*styling of the nav bar. default setting is to display: 'none'*/
 #menu {
     background: url("../Images/header-pic-2.jpg")no-repeat center center/cover;
@@ -586,6 +173,368 @@ nav li a {
     color: white;
 }
 
+/*styling of main background picture*/
+#main-pic-bg {
+    background: url("../Images/Pic-Main-Section-5.jpg")no-repeat center center/cover;
+}
+
+/*styling of main container of the body*/
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*styling of the inspirational quote container*/
+#inspirational-quote-div {
+    background-color: rgba(252, 246, 239, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 0.5vw;
+    margin-top: 20vw;
+    margin-left: 9vw;
+    height: 16vw;
+}
+
+/*styling of inspirational author*/
+#inspirational-quote-author {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+
+/*styling of the inspirational title div*/
+#inspirational-quote-title {
+    /*border: 1px solid rgb(224, 9, 9);*/
+
+    width: 99%;
+    height: 5vw;
+}
+
+/*styling of the inspirational title quote div*/
+#inspirational-quote {
+    margin-top: 1vw;
+    width: 99%;
+    height: 10vw;
+}
+
+/*styling of the inspirational quote text*/
+#inspirational-quote-text {
+    font-family: 'oswald', sans-serif;
+    font-style: italic;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*styling of About Us container*/
+#about-us {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(252, 246, 239, 0.5);
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 1vw;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    margin-bottom: 29vw;
+    height: 50vw;
+}
+
+/*styling of About Us title box*/
+#about-us-title-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    width: 100%;
+    height: 5vw;
+}
+
+/*styling of About Us content box*/
+#about-us-content-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100.2%;
+    margin-top: 1vw;
+    height: 50vw;
+}
+
+/*styling of the background colour for the About-Us description*/
+#about-us-description-background-colour {
+    background-color: rgb(250, 246, 246);
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 1vw;
+    height: 11%;
+    padding-top: 25vw;
+    position: absolute;
+    top: 91vw;
+    left: 9vw;
+
+}
+
+/*styling of the 6 images inside About-Us-content-box*/
+
+/*Image A*/
+#about-us-content-box-image-A {
+    background: url("../Images/about-us-pic-A.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 33.3%;
+    height: 50%;
+}
+
+/*Image B*/
+#about-us-content-box-image-B {
+    background: url("../Images/about-us-pic-B.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 33.3%;
+    height: 50%;
+}
+
+/*Image C*/
+#about-us-content-box-image-C {
+    background: url("../Images/about-us-pic-C.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 33.3%;
+    height: 50%;
+}
+
+/*Image D*/
+#about-us-content-box-image-D {
+    background: url("../Images/about-us-pic-D.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 33.3%;
+    height: 50%;
+}
+
+/*Image E*/
+#about-us-content-box-image-E {
+    background: url("../Images/about-us-pic-E.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 33.3%;
+    height: 50%;
+}
+
+/*Image F*/
+#about-us-content-box-image-F {
+    background: url("../Images/about-us-pic-F.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 33.3%;
+    height: 50%;
+}
+
+/*styling of Junior Beekeepers container*/
+
+#junior-beekeepers {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(252, 246, 239, 0.5);
+    width: 80%;
+    border-radius: 1vw;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    height: 15vw;
+}
+
+/*styling of the background colour for the Junior Beekeepers description*/
+
+#junior-bee-keepers-description-background-colour {
+    background-color: rgba(252, 246, 239, 0.8);
+    width: 80%;
+    border-radius: 1vw;
+    height: 37vw;
+    z-index: -1;
+    padding-top: 25vw;
+    position: absolute;
+    top: 150vw;
+    left: 9vw;
+}
+
+/*styling of Junior Beekeepers title box*/
+#junior-beekeepers-title-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    width: 100%;
+    height: 5vw;
+}
+
+
+#junior-beekeepers-title-box-text{
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+/*styling of Junior Beekeepers content box*/
+#junior-beekeepers-content-box {
+    width: 100.2%;
+    height: 20vw;
+}
+
+/*styling of image inside about-us-content-box*/
+#junior-beekeeper-content-box-image {
+    opacity: 1;
+    background: url("../Images/Junior-Beekeeper-pic-B.jpg")no-repeat center center/cover;
+    border-radius: 0.4vw;
+    width: 99.6%;
+    border-radius: 0.4vw;
+    height: 20vw;
+    margin-top: 2.5vw;
+    margin-left: 0.01%;
+}
+
+
+
+/*styling of Meeting Times container*/
+#meeting-times-container{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(252, 246, 239, 0.5);
+    border: 1px solid rgb(15, 15, 15);
+    width: 80%;
+    border-radius: 1vw;
+    margin-top: 45vw;
+    margin-left: 9vw;
+    height: 40vw;  
+}  
+/*styling of Meeting Times title box*/
+#meeting-times-title-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    width: 100%;
+    height: 5vw;
+}
+#meeting-times-title-box-text{
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    font-size: 70%;
+    font-weight: bold;
+}
+/*styling of Meeting Times content box*/
+#meeting-times-content-box{
+    padding: 1vw;
+    border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     display: flex;
+     display: inline-block;
+    justify-content: space-around;
+    width: 90%;
+    height: 10vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+}
+/*styling of meeting-times-content-box-table*/
+#meeting-times-content-box-table{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*styling of meeting-times table*/
+td, th {  
+    background-color: rgba(250, 243, 243, 0.5);
+    border: 1px solid inherit;
+    text-align: left;
+    font-size: 1vw;
+    width: 40vw;
+    padding: 1vw;
+    
+  }
+  
+  table {
+    border-radius: 3vw;
+    border: 1px solid inherit;
+    text-align: left;
+    font-size: 1vw;
+    width: 40vw;
+    margin-top: 2vw;
+    margin-left: 4.5vw;
+    border-collapse: collapse;
+    
+  }
+/*styling of Our-Location container*/
+#our-location {
+    border: 1px solid rgb(252, 94, 2);
+    background-color: rgba(252, 246, 239, 0.5);
+    width: 80%;
+    border-radius: 1vw;
+    margin-top: 10vw;
+    margin-left: 9vw;
+    margin-bottom: 10vw;
+    height: 50vw;
+}
+/*styling of Our-Location title box*/
+#our-location-title-box{
+    border: 1px solid rgb(219, 13, 13);
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    width: 100%;
+    height: 9vw;
+    padding-top: 1vw;
+}
+/*styling of Our-Location content box*/
+#our-location-content-box{
+border: 1px solid rgb(16, 224, 9);
+display: flex;
+flex-direction: column;
+width: 92%;
+margin-left: 5vw;
+height: 39vw;
+}
+
+#our-location-content-box-title{
+    border: 1px solid rgb(84, 9, 224);
+    border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1vw;
+    width: 95%;
+    height: 12vw; 
+}
+
+#our-location-content-box-text{
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: black;
+    color: orange;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+#our-location-content-box-map{
+    margin: auto;
+    border: 1px solid rgb(91, 9, 224);
+    height: 25vw;   
+    width: 100%;
+}
+
+#google-map{
+    position: relative;
+}
+
+.google-map iframe{
+     height: 25vw;
+     width: 70%;
+    position: absolute;
+}
+
+
+
 /* Footer */
 footer {
     height: 15vw;
@@ -596,9 +545,8 @@ footer {
 }
 
 /*styling of container holding 'Follow Us' and 'Contact Us' info*/
-#container {
+#follow-us-container {
     display: flex;
-
     border: 1px solid inherit;
     width: 95%;
     height: 80%;
@@ -606,7 +554,7 @@ footer {
 }
 
 /*styling of container parent divs*/
-#container-parent {
+#follow-us-container-parent {
     display: flex;
     flex-direction: column;
     border-right: 1px solid black;
@@ -716,3 +664,6 @@ div h8 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+
+
