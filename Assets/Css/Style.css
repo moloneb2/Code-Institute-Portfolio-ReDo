@@ -563,7 +563,7 @@ footer {
 }
 
 /*styling of children divs - containing 'contact us' and 'follow us' */
-#child-div {
+#child-div-a {
 
      display: flex;
     border: 1px inherit;
@@ -572,11 +572,11 @@ footer {
 }
 
 /*extra margin-top in child-div containing social media icons*/
-#child-div-A {
+#child-div-b{
     
   
-    align-content: center;
-    margin-top: 1vw;
+    
+    
 }
 
 /*styling of social media icons*/
