@@ -468,7 +468,6 @@ td, th {
   }
 /*styling of Our-Location container*/
 #our-location-container {
-    border: 1px solid rgb(252, 94, 2);
     background-color: rgba(252, 246, 239, 0.5);
     width: 80%;
     border-radius: 1vw;
@@ -479,7 +478,6 @@ td, th {
 }
 /*styling of Our-Location title box*/
 #our-location-title-box{
-    border: 1px solid rgb(219, 13, 13);
     display: flex;
     justify-content: center;
     margin-top: 1vw;
@@ -489,7 +487,6 @@ td, th {
 }
 /*styling of Our-Location content box*/
 #our-location-content-box{
-border: 1px solid rgb(16, 224, 9);
 display: flex;
 flex-direction: column;
 width: 92%;
@@ -498,7 +495,6 @@ height: 39vw;
 }
 
 #our-location-content-box-title{
-    border: 1px solid rgb(84, 9, 224);
     border-bottom: 1px solid rgba(15, 15, 15 , 0.8);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
@@ -518,7 +514,6 @@ height: 39vw;
 
 #our-location-content-box-map{
     margin: auto;
-    border: 1px solid rgb(91, 9, 224);
     height: 25vw;   
     width: 100%;
 }
@@ -568,14 +563,11 @@ footer {
      display: flex;
     border: 1px inherit;
     height: 100%;
-     
 }
 
 /*extra margin-top in child-div containing social media icons*/
 #child-div-b{
-    
-  margin-top: 5vw;
-    
+    margin-top: 5vw;
     display: flex;
 }
 
@@ -604,7 +596,6 @@ li i {
     margin-left: 1vw;
     margin-right: 2vw;
     margin-top: 5vw;
-
 }
 
 
@@ -620,7 +611,6 @@ div h8 {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    /*border: 1px solid rgb(197, 125, 16);*/
     width: 40%;
     margin-top: 1vw;
 }
@@ -636,9 +626,7 @@ div h8 {
 /*styling of email address div*/
 #email-address {
     margin-top: 1vw;
-    /*border: 1px solid rgb(155, 16, 197);*/
     width: 50%;
-
 }
 
 
@@ -717,6 +705,24 @@ div h8 {
     #bee-keepers-logo {
         font-size: 350%;
     }
+    /*styling of the inspirational quote text*/
+    /* Header style*/
+header {
+    
+    padding-bottom: 8.5vw;
+    height: 8vw;
+}
+#hamburger-menu {
+    font-size: 3.2vw;
+    margin-top: 4vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+#inspirational-quote-text {
+    
+    font-size: 2.2vw;
+    
+}
     #about-us-title-box-text{
         font-size: 250%;
     }
@@ -731,7 +737,7 @@ div h8 {
     }
     /*styling of meeting-times table*/
     td, th {  
-        font-size: 1.9vw;
+        font-size: 1.6vw;
     }
 }
 
