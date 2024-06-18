@@ -660,6 +660,76 @@ div h8 {
         margin-right: 2vw;
         margin-left: 2vw;
     }
+    #bee-keepers-logo {
+        text-align: center;
+        font-size: 220%;
+    
+        font-family: 'Sniglet', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        -webkit-text-stroke-width: 0.15vw;
+        -webkit-text-stroke-color: black;
+        color: rgb(247, 161, 2);
+        margin-top: 3.1vw;
+    }
+    #about-us-title-box-text{
+        -webkit-text-stroke-width: 0.15vw;
+        -webkit-text-stroke-color: black;
+        color: orange;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    #junior-beekeepers-title-box-text{
+        -webkit-text-stroke-width: 0.15vw;
+        -webkit-text-stroke-color: black;
+        color: orange;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    #meeting-times-title-box-text{
+        -webkit-text-stroke-width: 0.15vw;
+        -webkit-text-stroke-color: black;
+        color: orange;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    #our-location-content-box-text{
+        -webkit-text-stroke-width: 0.15vw;
+        -webkit-text-stroke-color: black;
+        color: orange;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    /*styling of meeting-times table*/
+td, th {  
+    background-color: rgba(250, 243, 243, 0.5);
+    border: 1px solid inherit;
+    text-align: left;
+    font-size: 1.5vw;
+    width: 40vw;
+    padding: 1vw;
+    
+  }
+  
+  table {
+    border-radius: 3vw;
+    border: 1px solid inherit;
+    text-align: left;
+    font-size: 1vw;
+    width: 40vw;
+    margin-top: 2vw;
+    margin-left: 4.5vw;
+    border-collapse: collapse;
+    
+  }
+  /*styling of children divs - containing 'contact us' and 'follow us' */
+#child-div-A{
+    margin-top: 5.5vw;
+    display: flex;
+   border: 1px inherit;
+   height: 100%;
+    
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
