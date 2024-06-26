@@ -104,7 +104,7 @@ header h1 {
 /*Bee Keepers logo inside header element*/
 #bee-keepers-logo {
     text-align: center;
-    font-size: 85%;
+    font-size: 5vw;
 
     font-family: 'Sniglet', sans-serif;
     text-transform: uppercase;
@@ -532,8 +532,13 @@ height: 39vw;
 
 /* Footer */
 footer {
-    height: 15vw;
+    
     display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    z-index: 99;
     flex-direction: row;
     background-color: orange;
     border-top: 1px solid #3a3a3a;
@@ -550,6 +555,7 @@ footer {
 
 /*styling of container parent divs*/
 #follow-us-container-parent {
+     height: 6.5vw;
     display: flex;
     flex-direction: column;
     border-right: 1px solid black;
@@ -559,15 +565,21 @@ footer {
 
 /*styling of children divs - containing 'contact us' and 'follow us' */
 #child-div-A{
-     margin-top: 2vw;
+    margin-bottom: 2.5vw;
+      margin: 0;
      display: flex;
-    border: 1px inherit;
-    height: 100%;
+   width: 90%;
+     border: 1px solid rgb(228, 12, 131); 
+    height: 3vw;
+    
 }
 
 /*extra margin-top in child-div containing social media icons*/
 #child-div-b{
-    margin-top: 5vw;
+    padding-top: 0;
+    height: 8vw;
+    border: 1px solid blue;
+    margin: 0;
     display: flex;
 }
 
@@ -578,9 +590,7 @@ li {
     list-style-type: none;
 }
 
-#social-media-icon {
-    margin-top: 0.1vw;
-}
+ 
 
 #child-div h8 {
     width: 100%;
@@ -612,7 +622,7 @@ div h8 {
     flex-direction: row;
     align-items: baseline;
     width: 40%;
-    margin-top: 1vw;
+     display: inline-block;
 }
 
 /*Addition of margin between phone icon and phone number*/
@@ -620,7 +630,8 @@ div h8 {
     font-size: 1.8vw;
     margin-left: 1vw;
     margin-right: 2vw;
-    margin-top: 1.1vw;
+     display: inline-block;
+     margin-top: 5vw;
 }
 
 /*styling of email address div*/
@@ -704,6 +715,10 @@ div h8 {
 @media only screen and (min-width: 1200px) {
     #bee-keepers-logo {
         font-size: 350%;
+    }
+    footer{
+        padding-bottom: 2vw;
+        height: 8vw;
     }
     /*styling of the inspirational quote text*/
     /* Header style*/

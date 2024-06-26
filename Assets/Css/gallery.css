@@ -61,6 +61,7 @@ header {
 }
 /*Header background picture of the sky*/
 #header-sky-bg {
+    
     padding-left: 0;
     background: url("../Images/inspirational-quote-bg.jpg")no-repeat center center/cover;
     z-index: 99;
@@ -72,7 +73,7 @@ header {
        
         
         text-align: center;
-        font-size: 80%;
+        font-size: 4.6vw;
     
         font-family: 'Sniglet', sans-serif;
         text-transform: uppercase;
@@ -226,7 +227,12 @@ nav li a {
 
 /* Footer */
 footer {
-    height: 15vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 13vw;
+    z-index: 99;
+    padding-bottom: 1vw;
     display: flex;
     flex-direction: row;
     background-color: orange;
@@ -243,32 +249,43 @@ footer {
     margin: auto;
 }
 
-/*styling of container parent divs*/
-#container-parent {
+/*styling of container holding 'Follow Us' and 'Contact Us' info*/
+#follow-us-container {
     display: flex;
-    flex-direction: column;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border: 1px solid inherit;
     width: 100%;
+    height: 80%;
+    margin: auto;
 }
 
-/*styling of children divs - containing 'contact us' and 'follow us' */
-#child-div {
-
-    display: flex;
-    border: 1px inherit;
-    height: 100%;
-
-}
-
-/*extra margin-top in child-div containing social media icons*/
-#child-div-A {
+/*styling of container parent divs*/
+#follow-us-container-parent {
     
-    margin-bottom: 1.5vw;
-     display: flex;
-    border: 1px inherit;
-    height: 100%;
+    height: 6.5vw;
+   display: flex;
+   flex-direction: column;
+   border-right: 1px solid black;
+   border-left: 1px solid black;
+   width: 100%;
 }
+/*styling of div containing phone information*/
+#phone-number {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 40%;
+      display: inline-block;
+}
+
+/*Addition of margin between phone icon and phone number*/
+#phone-icon {
+    font-size: 1.8vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+      display: inline-block;
+     margin-top: 5vw;
+}
+
 
 /*styling of social media icons*/
 li {
