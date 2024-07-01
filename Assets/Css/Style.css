@@ -151,7 +151,7 @@ main {
 /*Nav bar styles with dropdown toggle*/
 nav {
     position: absolute;
-    top: 13.5vw;
+    top: 11vw;
     left: 5vw;
     display: none;
 
@@ -713,6 +713,15 @@ div h8 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    /*Nav bar styles with dropdown toggle*/
+nav {
+    position: absolute;
+    top: 9vw;
+    left: 5vw;
+    display: none;
+
+
+}
     #bee-keepers-logo {
         font-size: 450%;
     }
