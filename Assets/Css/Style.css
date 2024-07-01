@@ -714,7 +714,7 @@ div h8 {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #bee-keepers-logo {
-        font-size: 350%;
+        font-size: 450%;
     }
     footer{
         padding-bottom: 2vw;
@@ -739,16 +739,16 @@ header {
     
 }
     #about-us-title-box-text{
-        font-size: 250%;
+        font-size: 280%;
     }
     #junior-beekeepers-title-box-text{
-         font-size: 250%;
+         font-size: 280%;
     }
     #meeting-times-title-box-text{
-         font-size: 250%;
+         font-size: 280%;
     }
     #our-location-content-box-text{
-         font-size: 250%;
+         font-size: 280%;
     }
     /*styling of meeting-times table*/
     td, th {  
