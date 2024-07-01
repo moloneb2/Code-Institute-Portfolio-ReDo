@@ -352,6 +352,13 @@ nav li a {
     text-decoration: none;
     color: white;
 }
+/*styling of thank you div*/
+#thank-you-div{
+    height: 153vw; 
+    background-color: rgb(122, 173, 224);
+    padding-left: 35%;
+    padding-top: 45%;
+}
 
 /* Footer */
 
@@ -471,17 +478,22 @@ div h8 {
 }
 
 
-/*Media Query; tablets and larger (less than 768px)*/
+/*Media Query; tablets and larger (768px and under 992px wide)*/
 @media screen and (min-width: 768px){
-
-}
-/*Media Query; tablets and larger (768px and up)*/
-@media screen and (min-width: 768px) {
     h3 {
-        
-        font-size: large;
-    
+        font-family:  'ADLaM Display', 'Roboto', 'Brush Script MT', 'cursive;';
+        font-size: x-large;
+        margin-top: 4vw;
     }
+    /*styling of thank you div*/
+    h1{
+        font-size: 250%;
+        
+    }
+}
+/*Large devices (laptops and desktops, 992px and up)*/
+@media screen and (min-width: 992px) {
+    
     #home-button{
         margin-left: 2vw;
       margin-right: 10vw;  
@@ -493,11 +505,174 @@ div h8 {
         padding-top: 1vw;
         box-shadow: 0 3px 2px #3a3a3a;
         margin-top: 10vw;
-        height: 5.5vw;
+        height: 12vw;
     }
     #bee-keepers-logo {
+        font-size: 250%;
+    }
+    h3 {
+        font-family:  'ADLaM Display', 'Roboto', 'Brush Script MT', 'cursive;';
+        font-size: x-large;
+        margin-top: 2.5vw;
+    }
+    /*styling of thank you div*/
+    h1{
+        font-size: 300%;
+         
+        
+    }
+   
+}
+/* Extra large devices (large laptops , 1200px and up to 1500px) */
+@media only screen and (min-width: 1200px) {
+    #bee-keepers-logo {
+        font-size: 350%;
+    }
+    h3 {
+        font-family:  'ADLaM Display', 'Roboto', 'Brush Script MT', 'cursive;';
         font-size: 200%;
+         
+        margin-top: 2.5vw;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+    #bee-keepers-logo {
+        font-size: 490%;
+    }
+    h3 {
+        font-family:  'ADLaM Display', 'Roboto', 'Brush Script MT', 'cursive;';
+        font-size: 220%;
+         
+        margin-top: 2.5vw;
+    }
+    #submit-form-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vw;
+        
     }
     
+    #sign-up-container-left {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        background-color: inherit;
+    }
+    
+    #sign-up-container-right {
+        width: 30%;
+        background-color: #ffe01b;
+    
+    }
+    
+    #sign-up-first-name {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: flex-end;
+        border-bottom: 1px solid rgb(80, 80, 82 , 0.5);
+        width: 100%;
+        height: 12vw;
+        padding-bottom: 1vw;
+        
+        
+    }
+    
+    #first-name {
+        width: 35vw;
+        height: 6vw;
+        border-radius: 0.4vw;
+        font-size: 1.5vw;
+        padding-left: 1vw;
+       
+    }
+    
+    #sign-up-last-name {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: flex-end;
+        border-bottom: 1px solid rgb(80, 80, 82 , 0.5);
+        width: 100%;
+        height: 12vw;
+    }
+    
+    #last-name {
+        width: 35vw;
+        height: 6vw;
+        border-radius: 0.4vw;
+        font-size: 1.5vw;
+        padding-left: 1vw;
+        
+    }
+    
+    #sign-up-last-email {
+        display: block;
+        padding-top: 4vw;
+        padding-left: 3vw;
+        border-bottom: 1px solid rgb(80, 80, 82 , 0.5);
+        width: 100%;
+        height: 20vw;
+    }
+    
+    #sign-up-email-address {
+        margin-top: 1vw;
+        width: 55vw;
+        height: 5vw;
+        border-radius: 0.4vw;
+        font-size: 1.5vw;
+        padding-left: 1vw;
+        
+    
+    }
+    
+    #radio-buttons {
+        padding-left: 3vw;
+        margin-top: 5vw;
+        border-bottom: 1px solid rgb(80, 80, 82 , 0.5);
+        width: 100%;
+        height: 45vw;
+    }
+     
+    
+    #submit-form {
+        padding-top: 1vw;
+        padding-left: 3vw;
+        margin-top: 5vw;
+        border-bottom: 1px solid rgb(80, 80, 82 , 0.5);
+        width: 100%;
+        height: 10vw;
+    }
+    #submit-button{
+        
+        background-color: rgb(10, 102, 194);
+        color: white;
+        border: none;
+        height: 4vw;
+        width: 12vw;
+        font-weight: bold;
+        font-size: 3vw;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 8px;
+        
+    
+    
+    }
+    #adult{
+        width: 1vw;
+        height: 1vw;
+         
+    }
+    #junior{
+        width: 1vw;
+        height: 1vw;
+         
+    }
+    #both{
+        width: 1vw;
+        height: 1vw;
+         
+    }
    
 }
