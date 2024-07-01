@@ -651,7 +651,7 @@ div h8 {
     color: rgb(3, 3, 3);
 }
 
-/*Media Query; tablets and larger (768px and under 979px wide)*/
+/*Media Query; tablets and larger (768px and under 992px wide)*/
 @media screen and (min-width: 768px) {
     #hamburger-menu {
         font-size: 4vw;
@@ -688,8 +688,8 @@ div h8 {
     }
 }
 
-/*for screen sizes over 979px and/*for screen sizes over 979px and under 1200px wide*/
-@media only screen and (min-width: 980px) {
+/*Large devices (laptops and desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
     #bee-keepers-logo {
         font-size: 280%;
     }

@@ -56,6 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
+    background-color: rgb(122, 173, 224);
 }
 
 /* Header style*/
@@ -140,6 +141,8 @@ main {
 
     /* Make main element take up any surplus space to push footer down. code taken from Love Running Project */
      flex: 1 0 auto;
+     
+      
 }
 
 /*styling of the nav bar. default setting is to display: 'none'*/
@@ -185,7 +188,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(252, 246, 239, 0.5);
+    
+    background-color: orange;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
